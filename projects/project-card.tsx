@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {ArrowUpRight, MapPin} from "lucide-react";
-import type {Project} from "../../data/projects";
+import type {Project} from "../data/projects";
 
 export default function ProjectCard({project, locale}: {project: Project; locale: string}) {
   return (
