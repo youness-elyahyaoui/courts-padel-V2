@@ -24,3 +24,98 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* HERO: entrance animation */
+@keyframes cp-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cp-hero-image {
+  from {
+    transform: scale(1.045);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes cp-scroll-hint {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+/* Only animate when the visitor allows motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .cp-hero-image {
+    animation: cp-hero-image 1.8s ease-out both;
+  }
+
+  .cp-hero-enter {
+    animation: cp-fade-up 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .cp-delay-1 {
+    animation-delay: 80ms;
+  }
+
+  .cp-delay-2 {
+    animation-delay: 160ms;
+  }
+
+  .cp-delay-3 {
+    animation-delay: 260ms;
+  }
+
+  .cp-delay-4 {
+    animation-delay: 360ms;
+  }
+
+  .cp-scroll-arrow {
+    animation: cp-scroll-hint 1.6s ease-in-out 3;
+  }
+
+  /* Applied by the observer only to elements below the viewport. */
+  .cp-reveal-pending {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  .cp-reveal-visible {
+    animation: cp-fade-up 600ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--cp-delay, 0ms);
+  }
+}
+
+/* Respect reduced-motion preferences for hover transitions too. */
+@media (prefers-reduced-motion: reduce) {
+  .cp-motion,
+  .cp-motion * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
