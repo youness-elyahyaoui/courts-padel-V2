@@ -1,7 +1,422 @@
 {
-  "Home": {
-    "title": "Welcome to COURTS&PADEL",
-    "description": "Professional padel courts",
-    "button": "Request a quote"
+  "hero": {
+    "imageAlt": "Padel courts at sunset",
+    "eyebrow": "TAILOR-MADE PADEL COURTS",
+    "sale": "SALES",
+    "installation": "INSTALLATION",
+    "maintenance": "MAINTENANCE",
+    "description": "Complete solutions for padel facilities – from planning and foundation work to delivery, professional installation and long-term maintenance.",
+    "quote": "REQUEST A QUOTE",
+    "projects": "VIEW PROJECTS",
+    "discover": "DISCOVER MORE"
+  },
+  "maintenance": {
+  "imageAlt": "Professional maintenance of a padel court’s artificial turf",
+  "eyebrow": "PROFESSIONAL MAINTENANCE",
+  "title": "Keep your padel facility",
+  "titleHighlight": "in top condition for years to come.",
+  "description": "Regular maintenance helps preserve the playing quality, safety and longevity of your padel facility. COURTS&PADEL provides professional maintenance and servicing for padel facilities.",
+  "cta": "REQUEST MAINTENANCE",
+  "services": {
+    "turf": {
+      "title": "ARTIFICIAL TURF CARE",
+      "description": "Cleaning, brushing and even distribution of infill material."
+    },
+    "structure": {
+      "title": "GLASS & STRUCTURE",
+      "description": "Inspection of glass panels, steel structures and fixings."
+    },
+    "equipment": {
+      "title": "NET & EQUIPMENT",
+      "description": "Inspection of nets and court equipment."
+    },
+    "repairs": {
+      "title": "REPAIRS & REPLACEMENT",
+      "description": "Repair and replacement of damaged components."
+    }
   }
+},
+"servicesSection": {
+  "eyebrow": "OUR SERVICES",
+  "title": "Everything for your",
+  "titleHighlight": "padel facility.",
+  "description": "From planning and foundation work to delivery, installation, canopies, mobile systems and professional maintenance – we provide tailor-made solutions for your padel project.",
+  "cta": "Explore all services",
+  "items": {
+    "sales": {
+      "title": "PADEL COURT SALES",
+      "description": "Sales and delivery of a range of padel court models and bespoke solutions."
+    },
+    "installation": {
+      "title": "ASSEMBLY & INSTALLATION",
+      "description": "Professional installation of complete padel facilities – precise, reliable and expertly carried out."
+    },
+    "foundations": {
+      "title": "FOUNDATION WORK",
+      "description": "Professional foundation and concrete work to provide a solid base for your padel facility."
+    },
+    "mobile": {
+      "title": "MOBILE SYSTEMS & PLATFORMS",
+      "description": "Flexible solutions for sites with specific construction requirements."
+    },
+    "canopies": {
+      "title": "COURT CANOPIES",
+      "description": "Bespoke canopy solutions for padel facilities."
+    },
+    "maintenance": {
+      "title": "MAINTENANCE & SERVICE",
+      "description": "Professional cleaning, inspections, upkeep and repairs for your padel facility."
+    }
+  }
+},
+"projectsSection": {
+  "eyebrow": "OUR PROJECTS",
+  "title": "Completed",
+  "titleHighlight": "padel facilities.",
+  "cta": "VIEW ALL PROJECTS"
+},
+"ctaSection": {
+  "eyebrow": "CONTACT",
+  "title": "Planning a",
+  "titleHighlight": "padel project?",
+  "description": "We’re happy to advise you and provide a tailored quote. Whether you need a new installation, an extension or maintenance, we’ll work with you to find the right solution for your project.",
+  "projectCta": "DISCUSS YOUR PROJECT",
+  "maintenanceCta": "REQUEST MAINTENANCE",
+  "phoneLabel": "Phone",
+  "emailLabel": "Email",
+  "locationLabel": "Location",
+  "phonePlaceholder": "Your phone number here",
+  "emailPlaceholder": "Your email address here",
+  "locationPlaceholder": "Your location here"
+},
+"aboutSection": {
+  "eyebrow": "ABOUT COURTS&PADEL",
+  "title": "Your partner for",
+  "titleHighlight": "professional padel facilities.",
+  "description": "COURTS&PADEL provides professional solutions for padel facilities. Working closely with our clients, we plan and coordinate every stage of the project – from foundation work and delivery to expert installation and long-term maintenance.",
+  "commitment": "We place particular emphasis on precision, quality and reliable project delivery.",
+  "cta": "MORE ABOUT US",
+  "imageAlt": "The COURTS&PADEL team installing a padel court",
+  "values": {
+    "quality": {
+      "title": "QUALITY",
+      "description": "High-quality materials and precise workmanship."
+    },
+    "expertise": {
+      "title": "EXPERTISE",
+      "description": "Experience in delivering a variety of padel projects."
+    },
+    "reliability": {
+      "title": "RELIABILITY",
+      "description": "A professional partner from planning to completion."
+    },
+    "tailored": {
+      "title": "TAILORED SOLUTIONS",
+      "description": "Bespoke concepts designed around your requirements."
+    }
+  }
+},
+"servicesPage": {
+  "hero": {
+    "imageAlt": "Padel facility at sunset",
+    "eyebrow": "OUR SERVICES",
+    "title": "Professional solutions",
+    "subtitle": "for",
+    "highlight": "your padel facility.",
+    "description": "Whether you’re planning a new padel facility, need expert installation or want to maintain existing courts, COURTS&PADEL provides tailored solutions to meet your project’s requirements."
+  },
+  "items": {
+    "sales": {
+      "label": "PADEL COURT SALES",
+      "title": "The right court",
+      "highlight": "for your project.",
+      "description": "COURTS&PADEL sells and delivers a range of padel court models. Together with our clients, we find the right solution for each project’s requirements and site conditions.",
+      "imageAlt": "Padel facility with blue courts"
+    },
+    "installation": {
+      "label": "ASSEMBLY & INSTALLATION",
+      "title": "Precision at every",
+      "highlight": "stage of installation.",
+      "description": "Expert installation is essential to the quality and functionality of a padel facility. COURTS&PADEL professionally installs padel courts, from the steel structure and glass panels to the artificial turf, lighting and court equipment.",
+      "imageAlt": "Installation of a padel facility"
+    },
+    "foundations": {
+      "label": "FOUNDATION WORK",
+      "title": "A solid foundation",
+      "highlight": "for your padel facility.",
+      "description": "Properly constructed foundations provide the basis for a stable, long-lasting padel facility. COURTS&PADEL offers foundation and concrete work in collaboration with specialist partner companies. The work is tailored to the project’s requirements and local site conditions.",
+      "imageAlt": "Foundation work for a padel court"
+    },
+    "mobile": {
+      "label": "MOBILE SYSTEMS & PLATFORMS",
+      "title": "Flexible solutions for",
+      "highlight": "specific requirements.",
+      "description": "Every site has different construction conditions. COURTS&PADEL assembles mobile padel court systems and platforms and installs the associated courts. These solutions make padel projects possible at sites with specific requirements.",
+      "imageAlt": "Padel courts on a raised platform"
+    },
+    "canopies": {
+      "label": "COURT CANOPIES",
+      "title": "The right canopy solutions",
+      "highlight": "for your padel facility.",
+      "description": "COURTS&PADEL supplies and professionally installs canopies for padel facilities. Together with our clients, we find suitable solutions tailored to the project’s requirements and local site conditions.",
+      "imageAlt": "Covered padel facility"
+    },
+    "maintenance": {
+      "label": "MAINTENANCE & SERVICE",
+      "title": "Professional care and",
+      "highlight": "upkeep.",
+      "description": "Regular maintenance helps preserve the playing quality, safety and functionality of your padel facility over the long term. COURTS&PADEL handles inspections, facility cleaning and artificial turf care, as well as repairs and replacements when needed.",
+      "imageAlt": "Professional maintenance of a padel court"
+    }
+  },
+  "maintenanceCta": "REQUEST MAINTENANCE",
+  "contact": {
+    "eyebrow": "YOUR NEXT PROJECT",
+    "title": "Planning a",
+    "highlight": "padel project?",
+    "description": "Whether you need a new padel facility, professional installation or a bespoke solution, talk to us about your project. We’re happy to advise you and provide a suitable quote.",
+    "cta": "REQUEST A QUOTE TODAY"
+  }
+},
+"projectsPage": {
+  "breadcrumb": "COURTS&PADEL / PROJECTS",
+  "title": "Our projects",
+  "description": "Explore our completed padel facilities."
+},
+"projectDetailPage": {
+  "allProjects": "All projects",
+  "eyebrow": "COURTS&PADEL — PROJECTS",
+  "projectPhoto": "Project photo",
+  "projectLabel": "01 — The project",
+  "title": "Professional solutions.",
+  "titleHighlight": "Tailored to your project.",
+  "specifications": "Project details",
+  "location": "Location",
+  "courtCount": "Number of courts",
+  "courtType": "Court type",
+  "installation": "Installation",
+  "galleryLabel": "02 — Gallery",
+  "galleryTitle": "A closer look",
+  "photoCount": "{count, plural, one {# PHOTO} other {# PHOTOS}}",
+  "galleryImageAlt": "{title} — Photo {number}",
+  "nextProject": "Next project",
+  "nextProjectWithTitle": "Next project: {title}",
+  "featuresLabel": "03 — Implementation",
+  "featuresTitle": "Project features"
+},
+"aboutPage": {
+  "hero": {
+    "imageAlt": "Installation of a padel facility",
+    "eyebrow": "ABOUT US",
+    "title": "Your partner for",
+    "subtitle": "professional",
+    "highlight": "padel facilities.",
+    "description": "COURTS&PADEL stands for expert workmanship, reliable collaboration and tailored solutions for padel facilities.",
+    "cta": "GET IN TOUCH"
+  },
+  "identity": {
+    "eyebrow": "WHO WE ARE",
+    "title": "A passion for padel.",
+    "highlight": "A commitment to quality.",
+    "description": "COURTS&PADEL is a company specialising in padel facilities, based in Monheim am Rhein.",
+    "commitment": "We support a variety of padel projects, placing particular emphasis on careful workmanship, precise installation and a trusting relationship with our clients.",
+    "imageAlt": "Padel court with glass walls and blue artificial turf"
+  },
+  "approach": {
+    "eyebrow": "HOW WE WORK",
+    "title": "Planning together.",
+    "highlight": "Delivering professionally.",
+    "description": "Every padel project has its own requirements. We discuss each project’s specific conditions with our clients and tailor the implementation accordingly.",
+    "coordination": "We carefully coordinate each stage of the work and place great importance on professional execution.",
+    "imageAlt": "Coordinating plans for a padel facility"
+  },
+  "values": {
+    "eyebrow": "WHAT SETS US APART",
+    "title": "Our",
+    "highlight": "values.",
+    "items": {
+      "quality": {
+        "title": "QUALITY",
+        "description": "Careful workmanship and precise execution in every project."
+      },
+      "expertise": {
+        "title": "EXPERTISE",
+        "description": "Practical solutions for a variety of padel projects."
+      },
+      "reliability": {
+        "title": "RELIABILITY",
+        "description": "Dependable collaboration and coordinated project workflows."
+      },
+      "tailored": {
+        "title": "TAILORED SOLUTIONS",
+        "description": "Solutions adapted to each project’s requirements."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "OUR PROJECTS",
+    "title": "Projects that",
+    "highlight": "speak for themselves.",
+    "description": "Explore a selection of padel facilities completed by COURTS&PADEL.",
+    "cta": "VIEW OUR PROJECTS",
+    "images": {
+      "indoor": "Indoor padel facility",
+      "outdoor": "Outdoor padel facility with blue artificial turf",
+      "aerial": "Aerial view of a padel facility"
+    }
+  }
+},
+"contactPage": {
+  "hero": {
+    "eyebrow": "CONTACT & ADVICE",
+    "title": "Let’s talk about",
+    "highlight": "your padel project",
+    "ending": "together.",
+    "description": "Planning a new padel facility, looking for help with installation or need maintenance? Get in touch – we look forward to hearing about your project."
+  },
+  "details": {
+    "imageAlt": "Padel facility with blue artificial turf",
+    "eyebrow": "CONTACT US DIRECTLY",
+    "title": "Our",
+    "highlight": "contact details.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "availabilityTitle": "Getting back to you",
+    "availabilityText": "We aim to respond to your enquiry as quickly as possible."
+  },
+  "form": {
+    "eyebrow": "PROJECT ENQUIRY",
+    "title": "Send us",
+    "highlight": "a no-obligation enquiry.",
+    "description": "Complete the form and we’ll get back to you as quickly as possible.",
+    "loading": "Loading form …",
+    "requestType": "Type of enquiry",
+    "types": {
+      "project": "New padel facility",
+      "installation": "Assembly & installation",
+      "maintenance": "Maintenance & repairs",
+      "other": "Other enquiry"
+    },
+    "name": "Name / Company",
+    "namePlaceholder": "Your name or company",
+    "email": "Email address",
+    "emailPlaceholder": "name@company.com",
+    "phone": "Phone number",
+    "phonePlaceholder": "+44 …",
+    "location": "Project location",
+    "locationPlaceholder": "City / Country",
+    "message": "Your message",
+    "messagePlaceholder": "Briefly describe your project, the number of padel courts, the services you need or any other details …",
+    "attachments": "Attach files (optional)",
+    "chooseFiles": "Choose files",
+    "fileHint": "JPG, PNG, PDF · maximum total size: 3 MB",
+    "removeFile": "Remove file {name}",
+    "privacy": "I have read and accept the <privacy>privacy policy</privacy>.",
+    "sending": "SENDING …",
+    "submit": "SEND ENQUIRY",
+    "sizeError": "The combined file size must not exceed 3 MB.",
+    "success": "Thank you! Your enquiry has been sent successfully.",
+    "error": "Your enquiry could not be sent. Please try again or contact us by email."
+  },
+  "benefits": {
+    "response": {
+      "title": "Prompt response",
+      "description": "We’ll get back to you shortly."
+    },
+    "advice": {
+      "title": "Personalised advice",
+      "description": "Tailored solutions for your project."
+    },
+    "team": {
+      "title": "Experienced team",
+      "description": "Professional and reliable execution."
+    },
+    "service": {
+      "title": "Complete service",
+      "description": "From planning to your completed padel facility."
+    }
+  },
+  "map": {
+    "title": "Monheim am Rhein location",
+    "eyebrow": "OUR LOCATION",
+    "country": "Germany",
+    "description": "From our base in Monheim am Rhein, we support padel projects across Germany and the surrounding regions. We look forward to your enquiry."
+  },
+  "cta": {
+    "eyebrow": "CONTACT & ADVICE",
+    "title": "Together, let’s bring",
+    "highlight": "your padel project",
+    "ending": "to life.",
+    "description": "Planning a padel facility or looking for a reliable partner for your project? We look forward to hearing from you.",
+    "button": "GET IN TOUCH TODAY"
+  }
+},
+"projectsContent": {
+  "countries": {
+    "Österreich": "Austria",
+    "Deutschland": "Germany",
+    "Schweiz": "Switzerland"
+  },
+  "terms": {
+    "Indoor": "Indoor",
+    "Outdoor": "Outdoor",
+    "Panorama-Padelplätze": "Panoramic padel courts",
+    "Panorama-Doppelplätze": "Panoramic doubles courts"
+  },
+  "items": {
+    "padel-field-soell": {
+      "description": "A look at the padel facility in Söll, Austria.",
+      "overview": "This reference project is located in Söll, Austria. The gallery shows the facility from different perspectives. Further technical information and the exact scope of work will be added following consultation with COURTS&PADEL."
+    },
+    "padel-factory-berlin": {
+      "description": "12 panoramic padel courts at an indoor facility in Berlin.",
+      "overview": "Padel Factory in Berlin features twelve indoor panoramic padel courts. The images show the facility and the layout of the courts. Additional information about the work carried out may be added following confirmation by COURTS&PADEL.",
+      "features": ["12 panoramic padel courts", "Indoor facility"]
+    },
+    "padelwerk-dulliken": {
+      "description": "8 panoramic padel courts at an indoor facility in Dulliken.",
+      "overview": "Padelwerk in Dulliken, Switzerland, features eight indoor panoramic padel courts. The gallery documents different views of the facility. Further technical details will be added once approved by the client.",
+      "features": ["8 panoramic padel courts", "Indoor facility"]
+    },
+    "padelfokus-hemer": {
+      "description": "3 outdoor panoramic doubles courts with mobile systems.",
+      "overview": "The PadelFokus project in Hemer features three outdoor panoramic doubles courts. The facility uses mobile systems. The gallery shows the padel courts and different views of the site.",
+      "features": ["3 panoramic doubles courts", "Mobile systems", "Outdoor facility"]
+    },
+    "padel-city-rotenburg": {
+      "description": "A look at the padel venue in Rotenburg.",
+      "overview": "Padel City in Rotenburg is among COURTS&PADEL’s project references. The available image shows the site. Information about the number and type of courts and the exact scope of work will be added following confirmation."
+    },
+    "padel-arena-mering": {
+      "description": "Padel facility in Mering – views of the project.",
+      "overview": "This reference project is located in Mering, Germany. The photo gallery documents the facility from several perspectives. The precise technical configuration and the work carried out will be described following consultation with COURTS&PADEL."
+    },
+    "tennisclub-gruen-berlin": {
+      "description": "Project views from Tennisclub Brühl in Berlin.",
+      "overview": "The images of this reference project show the Tennisclub Brühl site in Berlin. Further information about the padel facility, the selected systems and the scope of work will follow after client approval."
+    },
+    "sportfreunde-sachsenhausen": {
+      "description": "A look at the padel venue in Frankfurt-Sachsenhausen.",
+      "overview": "The project at Sportfreunde Sachsenhausen is located in Frankfurt am Main. The supplied images provide an initial impression of the site. Further information about the services and technical specifications will be added following confirmation."
+    },
+    "padel-geldern": {
+      "description": "A photographic look at a padel project in Geldern.",
+      "overview": "This reference project is located in Geldern, Germany. The images document the padel facility. The project name, construction method and technical details will be added following confirmation by COURTS&PADEL."
+    },
+    "eintracht-frankfurt-tennis": {
+      "description": "A look at the padel project at Eintracht Frankfurt Tennis.",
+      "overview": "The Eintracht Frankfurt Tennis reference project is located in Frankfurt am Main. The gallery shows the site through the original images supplied. Additional information about court numbers, construction methods and the work carried out will be added following consultation."
+    },
+    "TSV-Meerbusch-e.V.-Tennis": {
+      "description": "A look at the padel project at TSV Meerbusch e.V. – Tennis.",
+      "overview": "This reference project is located in Meerbusch. The gallery shows the site through the supplied images. Further technical information and the exact scope of work will be added following consultation with COURTS&PADEL."
+    },
+    "Projekt-Meerbusch": {
+      "title": "Meerbusch Project",
+      "description": "Construction of a ring foundation with permeable concrete as the base for a padel facility.",
+      "overview": "The Meerbusch project is an example of a successful padel facility. The images show the different aspects of the project."
+    }
+  }
+}
 }

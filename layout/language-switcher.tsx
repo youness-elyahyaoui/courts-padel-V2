@@ -7,6 +7,7 @@ const languages = [
   { code: "de", label: "Deutsch" },
   { code: "en", label: "English" },
   { code: "fr", label: "Français" },
+  { code: "es", label: "Español" },
 ];
 
 export default function LanguageSwitcher() {
@@ -14,7 +15,7 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
 
   const pathWithoutLocale =
-    pathname.replace(/^\/(de|en|fr)(?=\/|$)/, "") || "/";
+    pathname.replace(/^\/(de|en|fr|es)(?=\/|$)/, "") || "/";
 
   return (
     <details className="relative">

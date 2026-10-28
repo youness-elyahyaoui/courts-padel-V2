@@ -65,6 +65,23 @@ const translations = {
     rights: "Tous droits réservés.",
     backToTop: "Retour en haut",
   },
+    es: {
+    description:
+      "Soluciones profesionales para sus instalaciones de pádel. Desde la planificación y el montaje hasta el mantenimiento a largo plazo.",
+    navigation: "Descubrir",
+    home: "Inicio",
+    services: "Servicios",
+    projects: "Proyectos",
+    about: "Sobre nosotros",
+    contact: "Contacto",
+    projectTitle: "Su próximo proyecto de pádel",
+    projectDescription:
+      "Hagamos realidad sus instalaciones de pádel juntos.",
+    projectButton: "Solicitar presupuesto",
+    maintenanceButton: "Solicitar mantenimiento",
+    rights: "Todos los derechos reservados.",
+    backToTop: "Volver arriba",
+  },
 };
 
 export default function Footer({ locale }: Props) {
@@ -223,7 +240,7 @@ export default function Footer({ locale }: Props) {
 
             <Link
               href={`/${locale}/contact?type=maintenance`}
-              className={`mt-4 flex w-fit items-center gap-2 text-xs text-slate-400 ${linkClass}`}
+              className="mt-5 inline-flex items-center gap-2 rounded border border-white/60 px-5 py-3 text-xs font-bold hover:bg-white hover:text-[#071426]"
             >
               {t.maintenanceButton}
               <ArrowUpRight size={14} aria-hidden="true" />

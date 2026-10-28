@@ -7,20 +7,33 @@ import {
   MapPin,
 } from "lucide-react";
 
-// Renseigner les vraies coordonnées du client.
+import de from "@/messages/de.json";
+import en from "@/messages/en.json";
+import fr from "@/messages/fr.json";
+import es from "@/messages/es.json";
+
 const contact = {
   phone: "+491776907473",
   email: "info@court-padel.de",
   location: "Monheim am Rhein",
 };
 
-
-
 type Props = {
   locale: string;
 };
 
+const messages = { de, en, fr, es };
+
+type Locale = keyof typeof messages;
+
+function isSupportedLocale(locale: string): locale is Locale {
+  return Object.prototype.hasOwnProperty.call(messages, locale);
+}
+
 export default function CTASection({ locale }: Props) {
+  const currentLocale = isSupportedLocale(locale) ? locale : "de";
+  const t = messages[currentLocale].ctaSection;
+
   return (
     <section
       id="contact"
@@ -57,7 +70,7 @@ export default function CTASection({ locale }: Props) {
         <div className="max-w-2xl">
           <p className="mb-4 flex items-center gap-3 text-[10px] font-bold tracking-[0.16em]">
             <span className="h-[2px] w-8 bg-[#F50087]" />
-            KONTAKT
+            {t.eyebrow}
           </p>
 
           <h2
@@ -67,16 +80,14 @@ export default function CTASection({ locale }: Props) {
               tracking-[-0.035em] sm:text-4xl lg:text-[42px]
             "
           >
-            Sie planen ein{" "}
+            {t.title}{" "}
             <span className="text-[#F50087]">
-              Padelprojekt?
+              {t.titleHighlight}
             </span>
           </h2>
 
           <p className="mt-4 max-w-[550px] text-sm leading-6 text-slate-200">
-            Wir beraten Sie gerne und erstellen ein individuelles
-            Angebot. Ob Neuinstallation, Erweiterung oder Wartung –
-            wir finden gemeinsam die passende Lösung für Ihr Vorhaben.
+            {t.description}
           </p>
         </div>
 
@@ -84,7 +95,7 @@ export default function CTASection({ locale }: Props) {
         <div className="mt-7 flex flex-col gap-8 xl:flex-row xl:items-center xl:justify-between">
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
-              href={`/${locale}/contact?type=project`}
+              href={`/${currentLocale}/contact?type=project`}
               className="
                 inline-flex min-h-12 items-center
                 justify-center gap-4 rounded-sm
@@ -96,12 +107,12 @@ export default function CTASection({ locale }: Props) {
                 focus-visible:outline-white
               "
             >
-              PROJEKT ANFRAGEN
+              {t.projectCta}
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
 
             <Link
-              href={`/${locale}/contact?type=maintenance`}
+              href={`/${currentLocale}/contact?type=maintenance`}
               className="
                 inline-flex min-h-12 items-center
                 justify-center gap-4 rounded-sm
@@ -114,7 +125,7 @@ export default function CTASection({ locale }: Props) {
                 focus-visible:outline-white
               "
             >
-              WARTUNG ANFRAGEN
+              {t.maintenanceCta}
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </div>
@@ -130,7 +141,7 @@ export default function CTASection({ locale }: Props) {
               />
 
               <div className="min-w-0 text-xs">
-                <p className="font-bold">Telefon</p>
+                <p className="font-bold">{t.phoneLabel}</p>
 
                 {contact.phone ? (
                   <a
@@ -141,7 +152,7 @@ export default function CTASection({ locale }: Props) {
                   </a>
                 ) : (
                   <p className="mt-1 text-slate-300">
-                    Ihre Nummer hier
+                    {t.phonePlaceholder}
                   </p>
                 )}
               </div>
@@ -157,7 +168,7 @@ export default function CTASection({ locale }: Props) {
               />
 
               <div className="min-w-0 text-xs">
-                <p className="font-bold">E-Mail</p>
+                <p className="font-bold">{t.emailLabel}</p>
 
                 {contact.email ? (
                   <a
@@ -168,7 +179,7 @@ export default function CTASection({ locale }: Props) {
                   </a>
                 ) : (
                   <p className="mt-1 text-slate-300">
-                    Ihre E-Mail hier
+                    {t.emailPlaceholder}
                   </p>
                 )}
               </div>
@@ -184,9 +195,9 @@ export default function CTASection({ locale }: Props) {
               />
 
               <div className="text-xs">
-                <p className="font-bold">Standort</p>
+                <p className="font-bold">{t.locationLabel}</p>
                 <p className="mt-1 text-slate-200">
-                  {contact.location || "Ihr Standort hier"}
+                  {contact.location || t.locationPlaceholder}
                 </p>
               </div>
             </div>

@@ -8,38 +8,34 @@ import {
   UsersRound,
 } from "lucide-react";
 
-const values = [
-  {
-    title: "QUALITÄT",
-    description:
-      "Hochwertige Materialien und eine präzise Ausführung.",
-    icon: Gem,
-  },
-  {
-    title: "KOMPETENZ",
-    description:
-      "Erfahrung in der Umsetzung verschiedener Padelprojekte.",
-    icon: Settings,
-  },
-  {
-    title: "ZUVERLÄSSIGKEIT",
-    description:
-      "Ein professioneller Partner von der Planung bis zur Fertigstellung.",
-    icon: Handshake,
-  },
-  {
-    title: "INDIVIDUELLE LÖSUNGEN",
-    description:
-      "Maßgeschneiderte Konzepte für Ihre Anforderungen.",
-    icon: UsersRound,
-  },
-];
+import de from "@/messages/de.json";
+import en from "@/messages/en.json";
+import fr from "@/messages/fr.json";
+import es from "@/messages/es.json";
 
 type Props = {
   locale: string;
 };
 
+const messages = { de, en, fr, es };
+
+type Locale = keyof typeof messages;
+
+function isSupportedLocale(locale: string): locale is Locale {
+  return Object.prototype.hasOwnProperty.call(messages, locale);
+}
+
+const values = [
+  { key: "quality", icon: Gem },
+  { key: "expertise", icon: Settings },
+  { key: "reliability", icon: Handshake },
+  { key: "tailored", icon: UsersRound },
+] as const;
+
 export default function AboutSection({ locale }: Props) {
+  const currentLocale = isSupportedLocale(locale) ? locale : "de";
+  const t = messages[currentLocale].aboutSection;
+
   return (
     <section
       id="about"
@@ -52,7 +48,7 @@ export default function AboutSection({ locale }: Props) {
           <div>
             <p className="mb-4 flex items-center gap-3 text-[10px] font-bold tracking-[0.12em]">
               <span className="h-[2px] w-8 shrink-0 bg-[#F50087]" />
-              ÜBER COURTS&PADEL
+              {t.eyebrow}
             </p>
 
             <h2
@@ -62,27 +58,22 @@ export default function AboutSection({ locale }: Props) {
                 tracking-[-0.035em] sm:text-4xl lg:text-[42px]
               "
             >
-              Ihr Partner für
+              {t.title}
               <span className="block text-[#F50087]">
-                professionelle Padelanlagen.
+                {t.titleHighlight}
               </span>
             </h2>
 
             <p className="mt-5 text-sm leading-6 text-slate-600">
-              COURTS&PADEL bietet professionelle Lösungen rund um
-              Padelanlagen. Gemeinsam mit unseren Kunden planen und
-              koordinieren wir die einzelnen Projektphasen – von der
-              Fundamentierung und Lieferung über die fachgerechte
-              Montage bis hin zur langfristigen Wartung.
+              {t.description}
             </p>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Wir legen besonderen Wert auf präzise Arbeit, Qualität
-              und eine zuverlässige Umsetzung unserer Projekte.
+              {t.commitment}
             </p>
 
             <Link
-              href={`/${locale}/about`}
+              href={`/${currentLocale}/about`}
               className="
                 mt-6 inline-flex min-h-11 items-center
                 justify-center gap-4 rounded-sm
@@ -94,7 +85,7 @@ export default function AboutSection({ locale }: Props) {
                 focus-visible:outline-[#071426]
               "
             >
-              MEHR ÜBER UNS
+              {t.cta}
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </div>
@@ -102,7 +93,7 @@ export default function AboutSection({ locale }: Props) {
           <div className="relative aspect-[4/3] overflow-hidden rounded-md">
             <Image
               src="/images/about-team.png"
-              alt="Das COURTS&PADEL Team bei der Montage einer Padelanlage"
+              alt={t.imageAlt}
               fill
               sizes="(max-width: 1023px) 100vw, 50vw"
               className="object-cover object-center"
@@ -112,9 +103,9 @@ export default function AboutSection({ locale }: Props) {
 
         {/* FOUR VALUES */}
         <div className="mt-10 grid grid-cols-2 gap-y-8 md:mt-12 md:grid-cols-4">
-          {values.map(({ title, description, icon: Icon }, index) => (
+          {values.map(({ key, icon: Icon }, index) => (
             <article
-              key={title}
+              key={key}
               className={`
                 px-4 text-center sm:px-6
                 ${index % 2 === 1 ? "border-l border-slate-200" : ""}
@@ -129,11 +120,11 @@ export default function AboutSection({ locale }: Props) {
               />
 
               <h3 className="text-[11px] font-extrabold leading-4">
-                {title}
+                {t.values[key].title}
               </h3>
 
               <p className="mx-auto mt-2 max-w-[220px] text-xs leading-5 text-slate-600">
-                {description}
+                {t.values[key].description}
               </p>
             </article>
           ))}

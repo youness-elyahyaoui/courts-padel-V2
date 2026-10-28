@@ -1,50 +1,40 @@
 "use client";
 
 import { useEffect, useRef, type CSSProperties } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "PADELPLATZ-VERKAUF",
-    description:
-      "Verkauf und Lieferung verschiedener Padelplatzmodelle und individueller Lösungen.",
+    key: "sales",
     icon: "/icons/icon 1.svg",
   },
   {
-    title: "MONTAGE & INSTALLATION",
-    description:
-      "Professionelle Komplettmontage von Padelanlagen – präzise, zuverlässig und fachgerecht.",
+    key: "installation",
     icon: "/icons/icon 2.svg",
   },
   {
-    title: "FUNDAMENTIERUNG",
-    description:
-      "Fundament- und Betonarbeiten als professionelle Grundlage für Ihre Padelanlage.",
+    key: "foundations",
     icon: "/icons/icon 3.svg",
   },
   {
-    title: "MOBILE SYSTEME & PLATTFORMEN",
-    description:
-      "Flexible Lösungen für Standorte mit besonderen baulichen Anforderungen.",
+    key: "mobile",
     icon: "/icons/icon 4.svg",
   },
   {
-    title: "ÜBERDACHUNGEN",
-    description:
-      "Individuelle Überdachungslösungen für Padelanlagen.",
+    key: "canopies",
     icon: "/icons/icon 5.svg",
   },
   {
-    title: "WARTUNG & SERVICE",
-    description:
-      "Professionelle Pflege, Kontrolle, Instandhaltung und Reparatur Ihrer Padelanlage.",
+    key: "maintenance",
     icon: "/icons/icon 6.svg",
   },
-];
+] as const;
 
 export default function ServicesSection() {
+  const t = useTranslations("servicesSection");
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -118,23 +108,19 @@ export default function ServicesSection() {
             <span className="h-[2px] w-9 bg-[#F50087]" />
 
             <span className="text-[11px] font-bold tracking-[2px]">
-              UNSERE LEISTUNGEN
+              {t("eyebrow")}
             </span>
           </div>
 
           <h2 className="text-4xl font-extrabold leading-tight tracking-[-0.04em] md:text-5xl lg:text-6xl">
-            Alles für Ihre{" "}
+            {t("title")}{" "}
             <span className="text-[#F50087]">
-              Padelanlage.
+              {t("titleHighlight")}
             </span>
           </h2>
 
           <p className="mt-6 max-w-[780px] text-sm leading-8 text-slate-600 md:text-base">
-            Von der Planung und Fundamentierung über die
-            Lieferung und Montage bis hin zu Überdachungen,
-            mobilen Systemen und professioneller Wartung –
-            wir bieten maßgeschneiderte Lösungen für Ihr
-            Padelprojekt.
+            {t("description")}
           </p>
         </div>
 
@@ -142,7 +128,7 @@ export default function ServicesSection() {
         <div className="grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
-              key={service.title}
+              key={service.key}
               data-cp-reveal
               className="h-full"
               style={
@@ -207,11 +193,11 @@ export default function ServicesSection() {
                 </div>
 
                 <h3 className="relative mt-5 max-w-[300px] text-[12px] font-extrabold leading-snug md:text-[17px]">
-                  {service.title}
+                  {t(`items.${service.key}.title`)}
                 </h3>
 
                 <p className="relative mt-3 max-w-[320px] text-[11px] leading-relaxed text-slate-600 md:text-[14px]">
-                  {service.description}
+                  {t(`items.${service.key}.description`)}
                 </p>
 
                 <div className="mt-auto pt-7">
@@ -245,7 +231,7 @@ export default function ServicesSection() {
               focus-visible:outline-[#F50087]
             "
           >
-            Alle Leistungen entdecken
+            {t("cta")}
 
             <ArrowRight
               size={18}

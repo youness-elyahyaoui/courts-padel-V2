@@ -26,7 +26,7 @@ export default function Navbar({ locale }: Props) {
   const router = useRouter();
 
   const pathWithoutLocale =
-    pathname.replace(/^\/(de|en|fr)(?=\/|$)/, "") || "/";
+    pathname.replace(/^\/(de|en|fr|es)(?=\/|$)/, "") || "/";
 
   const navLinks = [
     { label: "Home", href: "/" },
@@ -163,7 +163,7 @@ export default function Navbar({ locale }: Props) {
           <div className="mt-5 flex items-center gap-5 border-t border-gray-100 px-4 pt-5">
             <Globe2 size={18} className="text-[#071426]" />
 
-            {["de", "en", "fr"].map((lang) => (
+            {["de", "en", "fr", "es"].map((lang) => (
               <button
                 key={lang}
                 type="button"

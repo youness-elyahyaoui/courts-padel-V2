@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
-import { useParams } from "next/navigation";
 import Link from "next/link";
+import { useParams, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import {
   Suspense,
   useState,
   type FormEvent,
+  type ReactNode,
 } from "react";
 
 import {
@@ -24,60 +25,30 @@ import {
   MessagesSquare,
   Handshake,
   Gem,
+  type LucideIcon,
 } from "lucide-react";
 
-/* Vérifier ces coordonnées avec le client avant publication. */
 const contact = {
   phone: "+49 177 6907473",
   email: "info@court-padel.de",
-  location: "Monheim am Rhein, Deutschland",
+  city: "Monheim am Rhein",
 };
 
 const requestTypes = [
-  {
-    value: "project",
-    label: "Neue Padelanlage",
-    icon: PanelsTopLeft,
-  },
-  {
-    value: "installation",
-    label: "Montage & Installation",
-    icon: Wrench,
-  },
-  {
-    value: "maintenance",
-    label: "Wartung & Reparatur",
-    icon: Settings,
-  },
-  {
-    value: "other",
-    label: "Sonstige Anfrage",
-    icon: MessageCircle,
-  },
-];
+  { value: "project", icon: PanelsTopLeft },
+  { value: "installation", icon: Wrench },
+  { value: "maintenance", icon: Settings },
+  { value: "other", icon: MessageCircle },
+] as const;
+
+type RequestType = (typeof requestTypes)[number]["value"];
 
 const benefits = [
-  {
-    icon: MessagesSquare,
-    title: "Schnelle Rückmeldung",
-    text: "Wir melden uns zeitnah bei Ihnen.",
-  },
-  {
-    icon: Handshake,
-    title: "Individuelle Beratung",
-    text: "Maßgeschneiderte Lösungen für Ihr Projekt.",
-  },
-  {
-    icon: Settings,
-    title: "Erfahrenes Team",
-    text: "Fachgerechte und zuverlässige Umsetzung.",
-  },
-  {
-    icon: Gem,
-    title: "Komplettservice",
-    text: "Von der Planung bis zur fertigen Padelanlage.",
-  },
-];
+  { key: "response", icon: MessagesSquare },
+  { key: "advice", icon: Handshake },
+  { key: "team", icon: Settings },
+  { key: "service", icon: Gem },
+] as const;
 
 const inputClass =
   "mt-2 block w-full rounded-sm border border-slate-200 " +
@@ -93,6 +64,9 @@ const buttonClass =
   "focus-visible:outline-offset-4 focus-visible:outline-[#F50087]";
 
 export default function ContactPage() {
+  const t = useTranslations("contactPage");
+  const location = `${contact.city}, ${t("map.country")}`;
+
   return (
     <main className="bg-white text-[#071426]">
       {/* HERO */}
@@ -113,21 +87,18 @@ export default function ContactPage() {
 
         <div className="relative mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:py-20">
           <div className="max-w-xl">
-            <Label light>KONTAKT & BERATUNG</Label>
+            <Label light>{t("hero.eyebrow")}</Label>
 
             <h1 className="mt-5 text-4xl text-white font-extrabold leading-[1.06] tracking-tight sm:text-5xl">
-              Lassen Sie uns über
+              {t("hero.title")}
               <span className="block text-[#F50087]">
-                Ihr Padelprojekt
+                {t("hero.highlight")}
               </span>
-              sprechen.
+              {t("hero.ending")}
             </h1>
 
             <p className="mt-5 max-w-md text-sm leading-6 text-white/85">
-              Sie planen eine neue Padelanlage, benötigen
-              Unterstützung bei der Montage oder möchten
-              Wartungsarbeiten anfragen? Kontaktieren Sie uns –
-              wir freuen uns auf Ihr Vorhaben.
+              {t("hero.description")}
             </p>
           </div>
         </div>
@@ -139,7 +110,7 @@ export default function ContactPage() {
           <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
             <Image
               src="/images/about/court.png"
-              alt="Padelanlage mit blauem Kunstrasen"
+              alt={t("details.imageAlt")}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"
@@ -147,17 +118,17 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-[#F7F8FA] p-5 sm:p-6">
-            <Label>DIREKT KONTAKTIEREN</Label>
+            <Label>{t("details.eyebrow")}</Label>
 
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight">
-              Unsere{" "}
+              {t("details.title")}{" "}
               <span className="text-[#F50087]">
-                Kontaktdaten.
+                {t("details.highlight")}
               </span>
             </h2>
 
             <address className="mt-5 divide-y divide-slate-200 bg-white px-4 not-italic">
-              <ContactItem icon={Phone} title="Telefon">
+              <ContactItem icon={Phone} title={t("details.phone")}>
                 <a
                   href={`tel:${contact.phone.replace(/[^+\d]/g, "")}`}
                   className="hover:text-[#F50087]"
@@ -166,7 +137,7 @@ export default function ContactPage() {
                 </a>
               </ContactItem>
 
-              <ContactItem icon={Mail} title="E-Mail">
+              <ContactItem icon={Mail} title={t("details.email")}>
                 <a
                   href={`mailto:${contact.email}`}
                   className="break-all hover:text-[#F50087]"
@@ -175,8 +146,8 @@ export default function ContactPage() {
                 </a>
               </ContactItem>
 
-              <ContactItem icon={MapPin} title="Standort">
-                {contact.location}
+              <ContactItem icon={MapPin} title={t("details.location")}>
+                {location}
               </ContactItem>
             </address>
           </div>
@@ -190,12 +161,11 @@ export default function ContactPage() {
 
             <div>
               <h3 className="text-sm font-bold">
-                Unsere Erreichbarkeit
+                {t("details.availabilityTitle")}
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                Wir bemühen uns, Ihre Anfrage schnellstmöglich
-                zu beantworten.
+                {t("details.availabilityText")}
               </p>
             </div>
           </div>
@@ -205,24 +175,23 @@ export default function ContactPage() {
           id="anfrage"
           className="scroll-mt-28 rounded-sm border border-slate-200 p-5 sm:p-7"
         >
-          <Label>PROJEKTANFRAGE</Label>
+          <Label>{t("form.eyebrow")}</Label>
 
           <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight">
-            Jetzt{" "}
+            {t("form.title")}{" "}
             <span className="text-[#F50087]">
-              unverbindlich anfragen.
+              {t("form.highlight")}
             </span>
           </h2>
 
           <p className="mt-3 text-sm leading-6 text-slate-600">
-            Füllen Sie das Formular aus und wir melden uns
-            schnellstmöglich bei Ihnen zurück.
+            {t("form.description")}
           </p>
 
           <Suspense
             fallback={
               <p className="mt-6 text-sm">
-                Formular wird geladen …
+                {t("form.loading")}
               </p>
             }
           >
@@ -234,8 +203,8 @@ export default function ContactPage() {
       {/* BENEFITS */}
       <section className="border-y border-slate-100 bg-[#FAFAFB]">
         <div className="mx-auto grid max-w-7xl gap-7 px-5 py-7 sm:grid-cols-2 sm:px-8 lg:grid-cols-4">
-          {benefits.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="flex items-start gap-4">
+          {benefits.map(({ icon: Icon, key }) => (
+            <div key={key} className="flex items-start gap-4">
               <Icon
                 size={32}
                 strokeWidth={1.6}
@@ -244,9 +213,12 @@ export default function ContactPage() {
               />
 
               <div>
-                <h3 className="text-sm font-bold">{title}</h3>
+                <h3 className="text-sm font-bold">
+                  {t(`benefits.${key}.title`)}
+                </h3>
+
                 <p className="mt-1 text-xs leading-5 text-slate-600">
-                  {text}
+                  {t(`benefits.${key}.description`)}
                 </p>
               </div>
             </div>
@@ -258,7 +230,7 @@ export default function ContactPage() {
       <section className="mx-auto grid max-w-7xl items-center gap-7 px-5 py-10 sm:px-8 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="overflow-hidden rounded-sm bg-slate-100">
           <iframe
-            title="Standort Monheim am Rhein"
+            title={t("map.title")}
             src="https://maps.google.com/maps?q=Monheim%20am%20Rhein%2C%20Deutschland&z=11&output=embed"
             width="100%"
             height="280"
@@ -269,19 +241,17 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <Label>UNSER STANDORT</Label>
+          <Label>{t("map.eyebrow")}</Label>
 
           <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight">
-            Monheim am Rhein,
+            {contact.city},
             <span className="block text-[#F50087]">
-              Deutschland
+              {t("map.country")}
             </span>
           </h2>
 
           <p className="mt-4 text-sm leading-6 text-slate-600">
-            Von unserem Standort in Monheim am Rhein aus
-            betreuen wir Padelprojekte in Deutschland und den
-            umliegenden Regionen. Wir freuen uns auf Ihre Anfrage.
+            {t("map.description")}
           </p>
 
           <div className="mt-5 flex items-center gap-3 text-sm">
@@ -290,7 +260,7 @@ export default function ContactPage() {
               aria-hidden="true"
               className="shrink-0 text-[#F50087]"
             />
-            {contact.location}
+            {location}
           </div>
         </div>
       </section>
@@ -311,25 +281,24 @@ export default function ContactPage() {
         />
 
         <div className="relative mx-auto max-w-7xl px-5 py-12 sm:px-8">
-          <Label light>KONTAKT & BERATUNG</Label>
+          <Label light>{t("cta.eyebrow")}</Label>
 
           <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-            Gemeinsam Ihr
+            {t("cta.title")}
             <br />
             <span className="text-[#F50087]">
-              Padelprojekt
-            </span>{" "}
-            realisieren.
+              {t("cta.highlight")}
+            </span>
+            {t("cta.ending") === "." ? "" : " "}
+            {t("cta.ending")}
           </h2>
 
           <p className="mt-4 max-w-lg text-sm leading-6 text-white/85">
-            Sie planen eine Padelanlage oder suchen einen
-            zuverlässigen Partner für Ihr Vorhaben?
-            Wir freuen uns auf Ihre Anfrage.
+            {t("cta.description")}
           </p>
 
           <a href="#anfrage" className={`${buttonClass} mt-6`}>
-            JETZT KONTAKT AUFNEHMEN
+            {t("cta.button")}
             <ArrowRight size={16} aria-hidden="true" />
           </a>
         </div>
@@ -339,25 +308,31 @@ export default function ContactPage() {
 }
 
 function ContactForm() {
+  const t = useTranslations("contactPage.form");
   const searchParams = useSearchParams();
-  const initialType = searchParams.get("type");
   const { locale } = useParams<{ locale: string }>();
 
-  const [selectedType, setSelectedType] = useState(
-    requestTypes.some((item) => item.value === initialType)
-      ? initialType!
-      : "project"
-  );
+  const initialType = requestTypes.find(
+    (item) => item.value === searchParams.get("type")
+  )?.value ?? "project";
+
+  const [selectedType, setSelectedType] =
+    useState<RequestType>(initialType);
 
   const [files, setFiles] = useState<File[]>([]);
+
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
 
-  const [message, setMessage] = useState("");
+  const [messageKey, setMessageKey] = useState<
+    "sizeError" | "success" | "error" | null
+  >(null);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    if (status === "sending") return;
 
     const form = event.currentTarget;
     const data = new FormData(form);
@@ -372,14 +347,14 @@ function ContactForm() {
 
     if (totalSize > 3 * 1024 * 1024) {
       setStatus("error");
-      setMessage("Die Dateien dürfen zusammen maximal 3 MB groß sein.");
+      setMessageKey("sizeError");
       return;
     }
 
     files.forEach((file) => data.append("attachments", file));
 
     setStatus("sending");
-    setMessage("");
+    setMessageKey(null);
 
     try {
       const response = await fetch("/api/contact", {
@@ -388,21 +363,16 @@ function ContactForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Anfrage fehlgeschlagen");
+        throw new Error("Contact request failed");
       }
-
-      setStatus("success");
-      setMessage(
-        "Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet."
-      );
 
       form.reset();
       setFiles([]);
+      setStatus("success");
+      setMessageKey("success");
     } catch {
       setStatus("error");
-      setMessage(
-        "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per E-Mail."
-      );
+      setMessageKey("error");
     }
   }
 
@@ -412,68 +382,72 @@ function ContactForm() {
       className="mt-6 space-y-5"
       aria-busy={status === "sending"}
     >
-      <fieldset>
-  <legend className="text-xs font-bold">
-    Art der Anfrage <span className="text-[#F50087]">*</span>
-  </legend>
+      <fieldset disabled={status === "sending"}>
+        <legend className="text-xs font-bold">
+          {t("requestType")}{" "}
+          <span className="text-[#F50087]">*</span>
+        </legend>
 
-  <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
-    {requestTypes.map(({ value, label, icon: Icon }) => (
-      <label key={value} className="relative block cursor-pointer">
-        <input
-          type="radio"
-          name="type"
-          value={value}
-          checked={selectedType === value}
-          onChange={() => setSelectedType(value)}
-          className="peer absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0"
-        />
+        <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {requestTypes.map(({ value, icon: Icon }) => (
+            <label
+              key={value}
+              className="relative block cursor-pointer"
+            >
+              <input
+                type="radio"
+                name="type"
+                value={value}
+                checked={selectedType === value}
+                onChange={() => setSelectedType(value)}
+                className="peer absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0"
+              />
 
-        <span
-          className="
-            flex min-h-24 flex-col items-center justify-center
-            gap-2 rounded-sm border border-slate-200
-            bg-white px-2 py-3 text-center
-            transition-colors
-            peer-checked:border-[#F50087]
-            peer-checked:bg-[#F50087]/5
-            peer-checked:[&>svg]:text-[#F50087]
-            peer-focus-visible:ring-2
-            peer-focus-visible:ring-[#F50087]
-            peer-focus-visible:ring-offset-2
-          "
-        >
-          <Icon
-            size={23}
-            aria-hidden="true"
-            className="text-slate-500"
-          />
+              <span
+                className="
+                  flex min-h-24 flex-col items-center justify-center
+                  gap-2 rounded-sm border border-slate-200
+                  bg-white px-2 py-3 text-center
+                  transition-colors
+                  peer-checked:border-[#F50087]
+                  peer-checked:bg-[#F50087]/5
+                  peer-checked:[&>svg]:text-[#F50087]
+                  peer-focus-visible:ring-2
+                  peer-focus-visible:ring-[#F50087]
+                  peer-focus-visible:ring-offset-2
+                "
+              >
+                <Icon
+                  size={23}
+                  aria-hidden="true"
+                  className="text-slate-500"
+                />
 
-          <span className="text-[11px] font-semibold leading-4">
-            {label}
-          </span>
-        </span>
-      </label>
-    ))}
-  </div>
-</fieldset>
+                <span className="text-[11px] font-semibold leading-4">
+                  {t(`types.${value}`)}
+                </span>
+              </span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-xs font-bold">
-          Name / Unternehmen{" "}
+          {t("name")}{" "}
           <span className="text-[#F50087]">*</span>
           <input
             name="name"
             required
             autoComplete="name"
             maxLength={160}
-            placeholder="Ihr Name oder Unternehmen"
+            placeholder={t("namePlaceholder")}
             className={inputClass}
           />
         </label>
 
         <label className="block text-xs font-bold">
-          E-Mail-Adresse{" "}
+          {t("email")}{" "}
           <span className="text-[#F50087]">*</span>
           <input
             name="email"
@@ -481,191 +455,194 @@ function ContactForm() {
             required
             autoComplete="email"
             maxLength={254}
-            placeholder="name@unternehmen.de"
+            placeholder={t("emailPlaceholder")}
             className={inputClass}
           />
         </label>
 
         <label className="block text-xs font-bold">
-          Telefonnummer
+          {t("phone")}
           <input
             name="phone"
             type="tel"
             autoComplete="tel"
             maxLength={50}
-            placeholder="+49 …"
+            placeholder={t("phonePlaceholder")}
             className={inputClass}
           />
         </label>
 
         <label className="block text-xs font-bold">
-          Projektstandort
+          {t("location")}
           <input
             name="location"
             maxLength={200}
-            placeholder="Stadt / Land"
+            placeholder={t("locationPlaceholder")}
             className={inputClass}
           />
         </label>
       </div>
 
       <label className="block text-xs font-bold">
-        Ihre Nachricht <span className="text-[#F50087]">*</span>
+        {t("message")}{" "}
+        <span className="text-[#F50087]">*</span>
         <textarea
           name="message"
           required
           rows={5}
           maxLength={5000}
-          placeholder="Beschreiben Sie uns kurz Ihr Vorhaben, die Anzahl der Padelplätze, gewünschte Leistungen oder weitere Details …"
+          placeholder={t("messagePlaceholder")}
           className={`${inputClass} resize-y`}
         />
       </label>
 
       <div>
-  <p className="text-xs font-bold">
-    Dateien anhängen (optional)
-  </p>
+        <p className="text-xs font-bold">
+          {t("attachments")}
+        </p>
 
-  <div
-    className="
-      relative mt-2 flex min-h-24 items-center
-      justify-center gap-3 rounded-sm border
-      border-dashed border-slate-300 bg-[#FAFAFB]
-      px-4 py-5
-      focus-within:ring-2 focus-within:ring-[#F50087]/30
-    "
-  >
-    <Paperclip
-      size={25}
-      aria-hidden="true"
-      className="shrink-0 text-slate-400"
-    />
-
-    <div className="text-xs leading-5 text-slate-600">
-      Dateien{" "}
-      <span className="font-semibold text-[#F50087] underline">
-        auswählen
-      </span>
-
-      <p className="text-[11px] text-slate-400">
-        JPG, PNG, PDF · insgesamt max. 3 MB
-      </p>
-    </div>
-
-    <input
-      type="file"
-      name="attachments"
-      aria-label="Dateien auswählen"
-      multiple
-      accept=".jpg,.jpeg,.png,.pdf"
-      onChange={(event) => {
-        const selectedFiles = Array.from(
-          event.currentTarget.files ?? []
-        );
-
-        // Annuler la fenêtre conserve la sélection précédente.
-        if (selectedFiles.length === 0) return;
-
-        const totalSize = selectedFiles.reduce(
-          (total, file) => total + file.size,
-          0
-        );
-
-        if (totalSize > 3 * 1024 * 1024) {
-          setStatus("error");
-          setMessage(
-            "Die Dateien dürfen zusammen maximal 3 MB groß sein."
-          );
-
-          event.currentTarget.value = "";
-          return;
-        }
-
-        setFiles(selectedFiles);
-        setStatus("idle");
-        setMessage("");
-      }}
-      className="
-        absolute inset-0 z-10 h-full w-full
-        cursor-pointer opacity-0
-      "
-    />
-  </div>
-
-  {files.length > 0 && (
-    <div className="mt-3 space-y-2">
-      {files.map((file, index) => (
         <div
-          key={`${file.name}-${file.lastModified}-${index}`}
           className="
-            flex items-center justify-between gap-3
-            rounded-sm border border-slate-200
-            bg-white px-3 py-2
+            relative mt-2 flex min-h-24 items-center
+            justify-center gap-3 rounded-sm border
+            border-dashed border-slate-300 bg-[#FAFAFB]
+            px-4 py-5
+            focus-within:ring-2 focus-within:ring-[#F50087]/30
           "
         >
-          <div className="min-w-0">
-            <p className="break-all text-xs font-medium">
-              {file.name}
-            </p>
+          <Paperclip
+            size={25}
+            aria-hidden="true"
+            className="shrink-0 text-slate-400"
+          />
 
-            <p className="mt-1 text-[11px] text-slate-400">
-              {(file.size / 1024).toFixed(0)} KB
+          <div className="text-xs leading-5 text-slate-600">
+            <span className="font-semibold text-[#F50087] underline">
+              {t("chooseFiles")}
+            </span>
+
+            <p className="text-[11px] text-slate-400">
+              {t("fileHint")}
             </p>
           </div>
 
-          <button
-            type="button"
-            aria-label={`Datei ${file.name} entfernen`}
-            onClick={() => {
-              setFiles((current) =>
-                current.filter((_, i) => i !== index)
+          <input
+            type="file"
+            name="attachments"
+            aria-label={t("chooseFiles")}
+            multiple
+            accept=".jpg,.jpeg,.png,.pdf"
+            disabled={status === "sending"}
+            onChange={(event) => {
+              const selectedFiles = Array.from(
+                event.currentTarget.files ?? []
               );
+
+              // Cancelling the dialog keeps the previous selection.
+              if (selectedFiles.length === 0) return;
+
+              const totalSize = selectedFiles.reduce(
+                (total, file) => total + file.size,
+                0
+              );
+
+              if (totalSize > 3 * 1024 * 1024) {
+                setStatus("error");
+                setMessageKey("sizeError");
+                event.currentTarget.value = "";
+                return;
+              }
+
+              setFiles(selectedFiles);
+              setStatus("idle");
+              setMessageKey(null);
             }}
             className="
-              shrink-0 px-2 py-1 text-lg
-              text-slate-400 hover:text-[#F50087]
+              absolute inset-0 z-10 h-full w-full
+              cursor-pointer opacity-0
             "
-          >
-            ×
-          </button>
+          />
         </div>
-      ))}
-    </div>
-  )}
-</div>
 
-           <label className="flex items-start gap-2 text-xs leading-5 text-slate-600">
-           <input
+        {files.length > 0 && (
+          <div className="mt-3 space-y-2">
+            {files.map((file, index) => (
+              <div
+                key={`${file.name}-${file.lastModified}-${index}`}
+                className="
+                  flex items-center justify-between gap-3
+                  rounded-sm border border-slate-200
+                  bg-white px-3 py-2
+                "
+              >
+                <div className="min-w-0">
+                  <p className="break-all text-xs font-medium">
+                    {file.name}
+                  </p>
+
+                  <p className="mt-1 text-[11px] text-slate-400">
+                    {(file.size / 1024).toFixed(0)} KB
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  disabled={status === "sending"}
+                  aria-label={t("removeFile", {
+                    name: file.name,
+                  })}
+                  onClick={() => {
+                    setFiles((current) =>
+                      current.filter((_, i) => i !== index)
+                    );
+                  }}
+                  className="
+                    shrink-0 px-2 py-1 text-lg
+                    text-slate-400 hover:text-[#F50087]
+                  "
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <label className="flex items-start gap-2 text-xs leading-5 text-slate-600">
+        <input
           type="checkbox"
           name="privacy"
           required
           value="accepted"
           className="mt-1 h-4 w-4 shrink-0 accent-[#F50087]"
-         />
+        />
 
-         <span>
-          Ich habe die{" "}
-          <a
-            href="./datenschutz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#F50087] underline"
-          >
-            Datenschutzerklärung
-          </a>{" "}
-          gelesen und akzeptiere sie.{" "}
+        <span>
+          {t.rich("privacy", {
+            privacy: (chunks) => (
+              <Link
+                href={`/${locale}/datenschutz`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F50087] underline"
+              >
+                {chunks}
+              </Link>
+            ),
+          })}{" "}
           <span className="text-[#F50087]">*</span>
-           </span>
-          </label>
+        </span>
+      </label>
 
-          <button
-           type="submit"
-          disabled={status === "sending"}
-          className={`${buttonClass} w-full disabled:cursor-wait disabled:opacity-60`}
-           >
-           {status === "sending" ? "WIRD GESENDET …" : "ANFRAGE SENDEN"}
-           <ArrowRight size={16} aria-hidden="true" />
-          </button>
+      <button
+        type="submit"
+        disabled={status === "sending"}
+        className={`${buttonClass} w-full disabled:cursor-wait disabled:opacity-60`}
+      >
+        {status === "sending" ? t("sending") : t("submit")}
+        <ArrowRight size={16} aria-hidden="true" />
+      </button>
 
       <p
         role={status === "error" ? "alert" : "status"}
@@ -674,17 +651,17 @@ function ContactForm() {
           status === "error" ? "text-red-600" : "text-green-700"
         }`}
       >
-        {message}
-        </p>
-     </form>
-      );
-      }
+        {messageKey ? t(messageKey) : ""}
+      </p>
+    </form>
+  );
+}
 
-       function Label({
+function Label({
   children,
   light = false,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   light?: boolean;
 }) {
   return (
@@ -707,9 +684,9 @@ function ContactItem({
   title,
   children,
 }: {
-  icon: typeof Phone;
+  icon: LucideIcon;
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <div className="flex items-start gap-4 py-4">

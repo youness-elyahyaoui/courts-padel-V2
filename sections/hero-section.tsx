@@ -1,16 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowDown,
-  ArrowRight,
-  ArrowUpRight,
-} from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
+
+import de from "@/messages/de.json";
+import en from "@/messages/en.json";
+import fr from "@/messages/fr.json";
+import es from "@/messages/es.json";
 
 type Props = {
   locale: string;
 };
 
+const messages = { de, en, fr, es };
+
+type Locale = keyof typeof messages;
+
+function isSupportedLocale(locale: string): locale is Locale {
+  return Object.prototype.hasOwnProperty.call(messages, locale);
+}
+
 export default function HeroSection({ locale }: Props) {
+  const currentLocale = isSupportedLocale(locale) ? locale : "de";
+  const t = messages[currentLocale].hero;
+
   return (
     <section
       id="home"
@@ -23,7 +35,7 @@ export default function HeroSection({ locale }: Props) {
       {/* BACKGROUND */}
       <Image
         src="/images/hero-panoramic.png"
-        alt="Padelanlagen bei Sonnenuntergang"
+        alt={t.imageAlt}
         fill
         priority
         quality={90}
@@ -60,7 +72,7 @@ export default function HeroSection({ locale }: Props) {
             <span className="h-[2px] w-9 shrink-0 bg-[#F50087]" />
 
             <span className="text-[10px] font-bold uppercase tracking-[1.8px] text-white sm:text-[12px]">
-              PADELANLAGEN NACH MASS
+              {t.eyebrow}
             </span>
           </div>
 
@@ -72,11 +84,11 @@ export default function HeroSection({ locale }: Props) {
               tracking-[-0.035em] text-white
             "
           >
-            VERKAUF
+            {t.sale}
             <span> · </span>
-            <span className="text-[#F50087]">MONTAGE</span>
+            <span className="text-[#F50087]">{t.installation}</span>
             <span> · </span>
-            WARTUNG
+            {t.maintenance}
           </h1>
 
           <p
@@ -86,14 +98,12 @@ export default function HeroSection({ locale }: Props) {
               sm:text-[16px] lg:text-[17px]
             "
           >
-            Komplettlösungen für Padelanlagen – von der Planung
-            und Fundamentierung über die Lieferung und
-            professionelle Montage bis zur langfristigen Wartung.
+            {t.description}
           </p>
 
           <div className="cp-hero-enter cp-delay-3 mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              href={`/${locale}/contact?type=project`}
+              href={`/${currentLocale}/contact?type=project`}
               className="
                 group inline-flex min-h-[49px]
                 items-center justify-center gap-3
@@ -109,7 +119,8 @@ export default function HeroSection({ locale }: Props) {
                 focus-visible:outline-white
               "
             >
-              ANGEBOT ANFORDERN
+              {t.quote}
+
               <ArrowUpRight
                 size={18}
                 strokeWidth={1.8}
@@ -123,7 +134,7 @@ export default function HeroSection({ locale }: Props) {
             </Link>
 
             <Link
-              href={`/${locale}/projects`}
+              href={`/${currentLocale}/projects`}
               className="
                 group inline-flex min-h-[49px]
                 items-center justify-center gap-3
@@ -138,7 +149,8 @@ export default function HeroSection({ locale }: Props) {
                 focus-visible:outline-white
               "
             >
-              PROJEKTE ANSEHEN
+              {t.projects}
+
               <ArrowRight
                 size={18}
                 strokeWidth={1.8}
@@ -186,7 +198,7 @@ export default function HeroSection({ locale }: Props) {
             />
           </span>
 
-          MEHR ENTDECKEN
+          {t.discover}
         </a>
       </div>
     </section>

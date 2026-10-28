@@ -1,83 +1,56 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
 const services = [
   {
     id: "verkauf",
-    label: "PADELPLATZ-VERKAUF",
-    title: "Der passende Court",
-    highlight: "für Ihr Projekt.",
-    description:
-      "COURTS&PADEL bietet den Verkauf und die Lieferung verschiedener Padelplatzmodelle. Gemeinsam mit unseren Kunden finden wir die passende Lösung, die auf die Anforderungen und Gegebenheiten des jeweiligen Projekts abgestimmt ist.",
+    key: "sales",
     image: "/images/verkauf.png",
-    alt: "Padelanlage mit blauen Spielfeldern",
     icon: "/icons/icon 1.svg",
   },
   {
     id: "montage",
-    label: "MONTAGE & INSTALLATION",
-    title: "Präzision bei jedem",
-    highlight: "Montageschritt.",
-    description:
-      "Die fachgerechte Montage ist entscheidend für die Qualität und Funktionalität einer Padelanlage. COURTS&PADEL übernimmt die professionelle Installation der Padelplätze – von der Stahlkonstruktion und den Glaselementen über den Kunstrasen bis hin zur Beleuchtung und Platzausstattung.",
+    key: "installation",
     image: "/images/montage.png",
-    alt: "Montage einer Padelanlage",
     icon: "/icons/icon 2.svg",
   },
   {
     id: "fundamentierung",
-    label: "FUNDAMENTIERUNG",
-    title: "Eine solide Grundlage",
-    highlight: "für Ihre Padelanlage.",
-    description:
-      "Eine fachgerechte Fundamentierung bildet die Basis für eine langlebige und stabile Padelanlage. COURTS&PADEL bietet Fundament- und Betonarbeiten in Zusammenarbeit mit spezialisierten Partnerunternehmen an. Die Ausführung wird auf die Anforderungen des Projekts und die örtlichen Gegebenheiten abgestimmt.",
+    key: "foundations",
     image: "/images/fundamentierung.png",
-    alt: "Fundamentarbeiten für einen Padelplatz",
     icon: "/icons/icon 3.svg",
   },
   {
     id: "mobile-systeme",
-    label: "MOBILE SYSTEME & PLATTFORMEN",
-    title: "Flexible Lösungen für",
-    highlight: "besondere Anforderungen.",
-    description:
-      "Nicht jeder Standort bietet die gleichen baulichen Voraussetzungen. COURTS&PADEL übernimmt die Montage mobiler Padelplatzsysteme und Plattformen sowie die Installation der dazugehörigen Padelplätze. Diese Lösungen ermöglichen die Umsetzung von Padelprojekten an Standorten mit speziellen Anforderungen.",
-    image: "/images/mobile-systeme.png",
-    alt: "Padelplätze auf einer erhöhten Plattform",
+    key: "mobile",
+    image: "/images/mobile-systeme.jpeg",
     icon: "/icons/icon 4.svg",
   },
   {
     id: "ueberdachungen",
-    label: "ÜBERDACHUNGEN",
-    title: "Passende Überdachungslösungen",
-    highlight: "für Ihre Padelanlage.",
-    description:
-      "COURTS&PADEL bietet die Lieferung und professionelle Montage von Überdachungen für Padelanlagen. Gemeinsam mit unseren Kunden finden wir passende Lösungen, die auf die Anforderungen des Projekts und die örtlichen Gegebenheiten abgestimmt sind.",
+    key: "canopies",
     image: "/images/ueberdachungen.png",
-    alt: "Überdachte Padelanlage",
     icon: "/icons/icon 5.svg",
   },
   {
     id: "wartung",
-    label: "WARTUNG & SERVICE",
-    title: "Professionelle Pflege und",
-    highlight: "Instandhaltung.",
-    description:
-      "Regelmäßige Wartung trägt dazu bei, die Spielqualität, Sicherheit und Funktionalität Ihrer Padelanlage langfristig zu erhalten. COURTS&PADEL übernimmt die Kontrolle und Reinigung der Anlage, die Kunstrasenpflege sowie bei Bedarf Reparatur- und Austauscharbeiten.",
+    key: "maintenance",
     image: "/images/wartung.png",
-    alt: "Professionelle Pflege eines Padelplatzes",
     icon: "/icons/icon 6.svg",
   },
-];
+] as const;
 
-export default function LeistungenPage() {
+export default async function LeistungenPage() {
+  const t = await getTranslations("servicesPage");
+
   return (
     <main className="bg-white text-[#101329]">
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <Image
           src="/images/hero.png"
-          alt="Padelanlage bei Sonnenuntergang"
+          alt={t("hero.imageAlt")}
           fill
           priority
           sizes="100vw"
@@ -90,22 +63,20 @@ export default function LeistungenPage() {
           <div className="max-w-xl">
             <p className="mb-5 flex items-center gap-3 text-xs font-semibold tracking-[0.18em] text-white">
               <span className="h-px w-9 bg-[#ed008c]" />
-              UNSERE LEISTUNGEN
+              {t("hero.eyebrow")}
             </p>
 
             <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Professionelle Lösungen
+              {t("hero.title")}
               <br />
-              für{" "}
+              {t("hero.subtitle")}{" "}
               <span className="text-[#ed008c]">
-                Ihre Padelanlage.
+                {t("hero.highlight")}
               </span>
             </h1>
 
             <p className="mt-6 max-w-md text-base leading-relaxed text-white/90 sm:text-lg">
-              Ob neue Padelanlage, fachgerechte Montage oder Wartung
-              bestehender Courts – COURTS&PADEL bietet individuelle
-              Lösungen, abgestimmt auf die Anforderungen Ihres Projekts.
+              {t("hero.description")}
             </p>
           </div>
         </div>
@@ -126,7 +97,7 @@ export default function LeistungenPage() {
             >
               <Image
                 src={service.image}
-                alt={service.alt}
+                alt={t(`items.${service.key}.imageAlt`)}
                 fill
                 sizes="(min-width: 1280px) 580px, (min-width: 768px) 50vw, 100vw"
                 className="object-cover"
@@ -148,27 +119,27 @@ export default function LeistungenPage() {
 
               <div>
                 <p className="mb-2 text-[10px] font-bold tracking-[0.08em] sm:text-xs">
-                  {service.label}
+                  {t(`items.${service.key}.label`)}
                 </p>
 
                 <h2 className="text-2xl font-extrabold leading-[1.12] tracking-tight lg:text-3xl">
-                  {service.title}
+                  {t(`items.${service.key}.title`)}
                   <br />
                   <span className="text-[#ed008c]">
-                    {service.highlight}
+                    {t(`items.${service.key}.highlight`)}
                   </span>
                 </h2>
 
                 <p className="mt-3 max-w-lg text-sm leading-relaxed text-slate-600 lg:text-base">
-                  {service.description}
+                  {t(`items.${service.key}.description`)}
                 </p>
 
                 {service.id === "wartung" && (
                   <Link
-                    href="/kontakt"
+                    href="/contact"
                     className="mt-5 inline-flex items-center gap-3 border border-[#ed008c] px-4 py-3 text-xs font-bold text-[#ed008c] transition-colors hover:bg-[#ed008c] hover:text-white"
                   >
-                    WARTUNG ANFRAGEN
+                    {t("maintenanceCta")}
                     <span aria-hidden="true">→</span>
                   </Link>
                 )}
@@ -193,26 +164,25 @@ export default function LeistungenPage() {
         <div className="relative mx-auto max-w-7xl px-6 py-12 sm:px-10 lg:py-16">
           <p className="mb-3 flex items-center gap-3 text-xs font-semibold tracking-[0.15em] text-white">
             <span className="h-px w-8 bg-[#ed008c]" />
-            IHR NÄCHSTES PROJEKT
+            {t("contact.eyebrow")}
           </p>
 
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Sie planen ein{" "}
-            <span className="text-[#ed008c]">Padelprojekt?</span>
+            {t("contact.title")}{" "}
+            <span className="text-[#ed008c]">
+              {t("contact.highlight")}
+            </span>
           </h2>
 
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
-            Ob neue Padelanlage, professionelle Montage oder eine
-            individuelle Lösung – sprechen Sie mit uns über Ihr
-            Vorhaben. Wir beraten Sie gerne und erstellen ein
-            passendes Angebot.
+            {t("contact.description")}
           </p>
 
           <Link
-            href="/kontakt"
+            href="/contact"
             className="mt-6 inline-flex items-center gap-4 bg-[#ed008c] px-6 py-4 text-xs font-bold text-white transition-colors hover:bg-[#c90077]"
           >
-            JETZT ANGEBOT ANFORDERN
+            {t("contact.cta")}
             <span aria-hidden="true">→</span>
           </Link>
         </div>

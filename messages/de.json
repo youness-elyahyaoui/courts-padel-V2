@@ -1,7 +1,422 @@
 {
-  "Home": {
-    "title": "Willkommen bei COURTS&PADEL",
-    "description": "Professionelle Padelanlagen",
-    "button": "Angebot anfordern"
+  "hero": {
+    "imageAlt": "Padelanlagen bei Sonnenuntergang",
+    "eyebrow": "PADELANLAGEN NACH MASS",
+    "sale": "VERKAUF",
+    "installation": "MONTAGE",
+    "maintenance": "WARTUNG",
+    "description": "Komplettlösungen für Padelanlagen – von der Planung und Fundamentierung über die Lieferung und professionelle Montage bis zur langfristigen Wartung.",
+    "quote": "ANGEBOT ANFORDERN",
+    "projects": "PROJEKTE ANSEHEN",
+    "discover": "MEHR ENTDECKEN"
+  },
+  "maintenance": {
+  "imageAlt": "Professionelle Pflege des Kunstrasens einer Padelanlage",
+  "eyebrow": "PROFESSIONELLE WARTUNG",
+  "title": "Damit Ihre Padelanlage",
+  "titleHighlight": "langfristig in Bestform bleibt.",
+  "description": "Regelmäßige Wartung trägt dazu bei, die Spielqualität, Sicherheit und Langlebigkeit Ihrer Padelanlage zu erhalten. COURTS&PADEL bietet professionelle Wartungs- und Serviceleistungen für Padelanlagen.",
+  "cta": "WARTUNG ANFRAGEN",
+  "services": {
+    "turf": {
+      "title": "KUNSTRASENPFLEGE",
+      "description": "Reinigung, Bürsten und gleichmäßige Verteilung des Füllmaterials."
+    },
+    "structure": {
+      "title": "GLAS & KONSTRUKTION",
+      "description": "Kontrolle von Glasflächen, Stahlkonstruktionen und Befestigungen."
+    },
+    "equipment": {
+      "title": "NETZ & AUSSTATTUNG",
+      "description": "Überprüfung von Netzen und Platzausstattung."
+    },
+    "repairs": {
+      "title": "REPARATUR & AUSTAUSCH",
+      "description": "Reparatur und Austausch beschädigter Komponenten."
+    }
   }
+},
+"servicesSection": {
+  "eyebrow": "UNSERE LEISTUNGEN",
+  "title": "Alles für Ihre",
+  "titleHighlight": "Padelanlage.",
+  "description": "Von der Planung und Fundamentierung über die Lieferung und Montage bis hin zu Überdachungen, mobilen Systemen und professioneller Wartung – wir bieten maßgeschneiderte Lösungen für Ihr Padelprojekt.",
+  "cta": "Alle Leistungen entdecken",
+  "items": {
+    "sales": {
+      "title": "PADELPLATZ-VERKAUF",
+      "description": "Verkauf und Lieferung verschiedener Padelplatzmodelle und individueller Lösungen."
+    },
+    "installation": {
+      "title": "MONTAGE & INSTALLATION",
+      "description": "Professionelle Komplettmontage von Padelanlagen – präzise, zuverlässig und fachgerecht."
+    },
+    "foundations": {
+      "title": "FUNDAMENTIERUNG",
+      "description": "Fundament- und Betonarbeiten als professionelle Grundlage für Ihre Padelanlage."
+    },
+    "mobile": {
+      "title": "MOBILE SYSTEME & PLATTFORMEN",
+      "description": "Flexible Lösungen für Standorte mit besonderen baulichen Anforderungen."
+    },
+    "canopies": {
+      "title": "ÜBERDACHUNGEN",
+      "description": "Individuelle Überdachungslösungen für Padelanlagen."
+    },
+    "maintenance": {
+      "title": "WARTUNG & SERVICE",
+      "description": "Professionelle Pflege, Kontrolle, Instandhaltung und Reparatur Ihrer Padelanlage."
+    }
+  }
+},
+"projectsSection": {
+  "eyebrow": "UNSERE PROJEKTE",
+  "title": "Realisierte",
+  "titleHighlight": "Padelanlagen.",
+  "cta": "ALLE PROJEKTE ANSEHEN"
+},
+"ctaSection": {
+  "eyebrow": "KONTAKT",
+  "title": "Sie planen ein",
+  "titleHighlight": "Padelprojekt?",
+  "description": "Wir beraten Sie gerne und erstellen ein individuelles Angebot. Ob Neuinstallation, Erweiterung oder Wartung – wir finden gemeinsam die passende Lösung für Ihr Vorhaben.",
+  "projectCta": "PROJEKT ANFRAGEN",
+  "maintenanceCta": "WARTUNG ANFRAGEN",
+  "phoneLabel": "Telefon",
+  "emailLabel": "E-Mail",
+  "locationLabel": "Standort",
+  "phonePlaceholder": "Ihre Nummer hier",
+  "emailPlaceholder": "Ihre E-Mail hier",
+  "locationPlaceholder": "Ihr Standort hier"
+},
+"aboutSection": {
+  "eyebrow": "ÜBER COURTS&PADEL",
+  "title": "Ihr Partner für",
+  "titleHighlight": "professionelle Padelanlagen.",
+  "description": "COURTS&PADEL bietet professionelle Lösungen rund um Padelanlagen. Gemeinsam mit unseren Kunden planen und koordinieren wir die einzelnen Projektphasen – von der Fundamentierung und Lieferung über die fachgerechte Montage bis hin zur langfristigen Wartung.",
+  "commitment": "Wir legen besonderen Wert auf präzise Arbeit, Qualität und eine zuverlässige Umsetzung unserer Projekte.",
+  "cta": "MEHR ÜBER UNS",
+  "imageAlt": "Das COURTS&PADEL Team bei der Montage einer Padelanlage",
+  "values": {
+    "quality": {
+      "title": "QUALITÄT",
+      "description": "Hochwertige Materialien und eine präzise Ausführung."
+    },
+    "expertise": {
+      "title": "KOMPETENZ",
+      "description": "Erfahrung in der Umsetzung verschiedener Padelprojekte."
+    },
+    "reliability": {
+      "title": "ZUVERLÄSSIGKEIT",
+      "description": "Ein professioneller Partner von der Planung bis zur Fertigstellung."
+    },
+    "tailored": {
+      "title": "INDIVIDUELLE LÖSUNGEN",
+      "description": "Maßgeschneiderte Konzepte für Ihre Anforderungen."
+    }
+  }
+},
+"servicesPage": {
+  "hero": {
+    "imageAlt": "Padelanlage bei Sonnenuntergang",
+    "eyebrow": "UNSERE LEISTUNGEN",
+    "title": "Professionelle Lösungen",
+    "subtitle": "für",
+    "highlight": "Ihre Padelanlage.",
+    "description": "Ob neue Padelanlage, fachgerechte Montage oder Wartung bestehender Courts – COURTS&PADEL bietet individuelle Lösungen, abgestimmt auf die Anforderungen Ihres Projekts."
+  },
+  "items": {
+    "sales": {
+      "label": "PADELPLATZ-VERKAUF",
+      "title": "Der passende Court",
+      "highlight": "für Ihr Projekt.",
+      "description": "COURTS&PADEL bietet den Verkauf und die Lieferung verschiedener Padelplatzmodelle. Gemeinsam mit unseren Kunden finden wir die passende Lösung, die auf die Anforderungen und Gegebenheiten des jeweiligen Projekts abgestimmt ist.",
+      "imageAlt": "Padelanlage mit blauen Spielfeldern"
+    },
+    "installation": {
+      "label": "MONTAGE & INSTALLATION",
+      "title": "Präzision bei jedem",
+      "highlight": "Montageschritt.",
+      "description": "Die fachgerechte Montage ist entscheidend für die Qualität und Funktionalität einer Padelanlage. COURTS&PADEL übernimmt die professionelle Installation der Padelplätze – von der Stahlkonstruktion und den Glaselementen über den Kunstrasen bis hin zur Beleuchtung und Platzausstattung.",
+      "imageAlt": "Montage einer Padelanlage"
+    },
+    "foundations": {
+      "label": "FUNDAMENTIERUNG",
+      "title": "Eine solide Grundlage",
+      "highlight": "für Ihre Padelanlage.",
+      "description": "Eine fachgerechte Fundamentierung bildet die Basis für eine langlebige und stabile Padelanlage. COURTS&PADEL bietet Fundament- und Betonarbeiten in Zusammenarbeit mit spezialisierten Partnerunternehmen an. Die Ausführung wird auf die Anforderungen des Projekts und die örtlichen Gegebenheiten abgestimmt.",
+      "imageAlt": "Fundamentarbeiten für einen Padelplatz"
+    },
+    "mobile": {
+      "label": "MOBILE SYSTEME & PLATTFORMEN",
+      "title": "Flexible Lösungen für",
+      "highlight": "besondere Anforderungen.",
+      "description": "Nicht jeder Standort bietet die gleichen baulichen Voraussetzungen. COURTS&PADEL übernimmt die Montage mobiler Padelplatzsysteme und Plattformen sowie die Installation der dazugehörigen Padelplätze. Diese Lösungen ermöglichen die Umsetzung von Padelprojekten an Standorten mit speziellen Anforderungen.",
+      "imageAlt": "Padelplätze auf einer erhöhten Plattform"
+    },
+    "canopies": {
+      "label": "ÜBERDACHUNGEN",
+      "title": "Passende Überdachungslösungen",
+      "highlight": "für Ihre Padelanlage.",
+      "description": "COURTS&PADEL bietet die Lieferung und professionelle Montage von Überdachungen für Padelanlagen. Gemeinsam mit unseren Kunden finden wir passende Lösungen, die auf die Anforderungen des Projekts und die örtlichen Gegebenheiten abgestimmt sind.",
+      "imageAlt": "Überdachte Padelanlage"
+    },
+    "maintenance": {
+      "label": "WARTUNG & SERVICE",
+      "title": "Professionelle Pflege und",
+      "highlight": "Instandhaltung.",
+      "description": "Regelmäßige Wartung trägt dazu bei, die Spielqualität, Sicherheit und Funktionalität Ihrer Padelanlage langfristig zu erhalten. COURTS&PADEL übernimmt die Kontrolle und Reinigung der Anlage, die Kunstrasenpflege sowie bei Bedarf Reparatur- und Austauscharbeiten.",
+      "imageAlt": "Professionelle Pflege eines Padelplatzes"
+    }
+  },
+  "maintenanceCta": "WARTUNG ANFRAGEN",
+  "contact": {
+    "eyebrow": "IHR NÄCHSTES PROJEKT",
+    "title": "Sie planen ein",
+    "highlight": "Padelprojekt?",
+    "description": "Ob neue Padelanlage, professionelle Montage oder eine individuelle Lösung – sprechen Sie mit uns über Ihr Vorhaben. Wir beraten Sie gerne und erstellen ein passendes Angebot.",
+    "cta": "JETZT ANGEBOT ANFORDERN"
+  }
+},
+"projectsPage": {
+  "breadcrumb": "COURTS&PADEL / PROJEKTE",
+  "title": "Unsere Projekte",
+  "description": "Einblicke in unsere realisierten Padelanlagen."
+},
+"projectDetailPage": {
+  "allProjects": "Alle Projekte",
+  "eyebrow": "COURTS&PADEL — PROJEKTE",
+  "projectPhoto": "Projektaufnahme",
+  "projectLabel": "01 — Das Projekt",
+  "title": "Professionelle Lösungen.",
+  "titleHighlight": "Individuell umgesetzt.",
+  "specifications": "Projektdaten",
+  "location": "Standort",
+  "courtCount": "Anzahl der Plätze",
+  "courtType": "Platztyp",
+  "installation": "Ausführung",
+  "galleryLabel": "02 — Galerie",
+  "galleryTitle": "Einblicke",
+  "photoCount": "{count, plural, one {# FOTO} other {# FOTOS}}",
+  "galleryImageAlt": "{title} — Aufnahme {number}",
+  "nextProject": "Nächstes Projekt",
+  "nextProjectWithTitle": "Nächstes Projekt: {title}",
+  "featuresLabel": "03 — Ausführung",
+  "featuresTitle": "Projektmerkmale"
+},
+"aboutPage": {
+  "hero": {
+    "imageAlt": "Montage einer Padelanlage",
+    "eyebrow": "ÜBER UNS",
+    "title": "Ihr Partner für",
+    "subtitle": "professionelle",
+    "highlight": "Padelanlagen.",
+    "description": "COURTS&PADEL steht für fachgerechte Arbeit, zuverlässige Zusammenarbeit und individuelle Lösungen rund um Padelanlagen.",
+    "cta": "KONTAKT AUFNEHMEN"
+  },
+  "identity": {
+    "eyebrow": "WER WIR SIND",
+    "title": "Leidenschaft für Padel.",
+    "highlight": "Anspruch an Qualität.",
+    "description": "COURTS&PADEL ist ein auf Padelanlagen spezialisiertes Unternehmen mit Sitz in Monheim am Rhein.",
+    "commitment": "Wir begleiten unterschiedliche Padelprojekte und legen besonderen Wert auf sorgfältige Ausführung, präzise Montage und eine vertrauensvolle Zusammenarbeit mit unseren Kunden.",
+    "imageAlt": "Padelplatz mit Glaswänden und blauem Kunstrasen"
+  },
+  "approach": {
+    "eyebrow": "UNSERE ARBEITSWEISE",
+    "title": "Gemeinsam planen.",
+    "highlight": "Professionell umsetzen.",
+    "description": "Jedes Padelprojekt bringt unterschiedliche Anforderungen mit sich. Deshalb besprechen wir gemeinsam mit unseren Kunden die jeweiligen Gegebenheiten und stimmen die Umsetzung auf das Vorhaben ab.",
+    "coordination": "Wir stimmen die einzelnen Arbeitsschritte sorgfältig aufeinander ab und legen großen Wert auf eine fachgerechte Umsetzung.",
+    "imageAlt": "Abstimmung der Planung für eine Padelanlage"
+  },
+  "values": {
+    "eyebrow": "WAS UNS AUSZEICHNET",
+    "title": "Unsere",
+    "highlight": "Werte.",
+    "items": {
+      "quality": {
+        "title": "QUALITÄT",
+        "description": "Sorgfältige Arbeit und präzise Ausführung in jedem Projekt."
+      },
+      "expertise": {
+        "title": "FACHKOMPETENZ",
+        "description": "Praxisorientierte Lösungen für unterschiedliche Padelprojekte."
+      },
+      "reliability": {
+        "title": "ZUVERLÄSSIGKEIT",
+        "description": "Verbindliche Zusammenarbeit und abgestimmte Projektabläufe."
+      },
+      "tailored": {
+        "title": "INDIVIDUELLE LÖSUNGEN",
+        "description": "Anpassung an die Anforderungen des jeweiligen Projekts."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "UNSERE PROJEKTE",
+    "title": "Projekte, die",
+    "highlight": "für sich sprechen.",
+    "description": "Erhalten Sie Einblicke in ausgewählte Padelanlagen, die COURTS&PADEL umgesetzt hat.",
+    "cta": "UNSERE PROJEKTE ANSEHEN",
+    "images": {
+      "indoor": "Indoor-Padelanlage",
+      "outdoor": "Outdoor-Padelanlage mit blauem Kunstrasen",
+      "aerial": "Padelanlage aus der Vogelperspektive"
+    }
+  }
+},
+"contactPage": {
+  "hero": {
+    "eyebrow": "KONTAKT & BERATUNG",
+    "title": "Lassen Sie uns über",
+    "highlight": "Ihr Padelprojekt",
+    "ending": "sprechen.",
+    "description": "Sie planen eine neue Padelanlage, benötigen Unterstützung bei der Montage oder möchten Wartungsarbeiten anfragen? Kontaktieren Sie uns – wir freuen uns auf Ihr Vorhaben."
+  },
+  "details": {
+    "imageAlt": "Padelanlage mit blauem Kunstrasen",
+    "eyebrow": "DIREKT KONTAKTIEREN",
+    "title": "Unsere",
+    "highlight": "Kontaktdaten.",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "location": "Standort",
+    "availabilityTitle": "Unsere Erreichbarkeit",
+    "availabilityText": "Wir bemühen uns, Ihre Anfrage schnellstmöglich zu beantworten."
+  },
+  "form": {
+    "eyebrow": "PROJEKTANFRAGE",
+    "title": "Jetzt",
+    "highlight": "unverbindlich anfragen.",
+    "description": "Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen zurück.",
+    "loading": "Formular wird geladen …",
+    "requestType": "Art der Anfrage",
+    "types": {
+      "project": "Neue Padelanlage",
+      "installation": "Montage & Installation",
+      "maintenance": "Wartung & Reparatur",
+      "other": "Sonstige Anfrage"
+    },
+    "name": "Name / Unternehmen",
+    "namePlaceholder": "Ihr Name oder Unternehmen",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "name@unternehmen.de",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "+49 …",
+    "location": "Projektstandort",
+    "locationPlaceholder": "Stadt / Land",
+    "message": "Ihre Nachricht",
+    "messagePlaceholder": "Beschreiben Sie uns kurz Ihr Vorhaben, die Anzahl der Padelplätze, gewünschte Leistungen oder weitere Details …",
+    "attachments": "Dateien anhängen (optional)",
+    "chooseFiles": "Dateien auswählen",
+    "fileHint": "JPG, PNG, PDF · insgesamt max. 3 MB",
+    "removeFile": "Datei {name} entfernen",
+    "privacy": "Ich habe die <privacy>Datenschutzerklärung</privacy> gelesen und akzeptiere sie.",
+    "sending": "WIRD GESENDET …",
+    "submit": "ANFRAGE SENDEN",
+    "sizeError": "Die Dateien dürfen zusammen maximal 3 MB groß sein.",
+    "success": "Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet.",
+    "error": "Ihre Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per E-Mail."
+  },
+  "benefits": {
+    "response": {
+      "title": "Schnelle Rückmeldung",
+      "description": "Wir melden uns zeitnah bei Ihnen."
+    },
+    "advice": {
+      "title": "Individuelle Beratung",
+      "description": "Maßgeschneiderte Lösungen für Ihr Projekt."
+    },
+    "team": {
+      "title": "Erfahrenes Team",
+      "description": "Fachgerechte und zuverlässige Umsetzung."
+    },
+    "service": {
+      "title": "Komplettservice",
+      "description": "Von der Planung bis zur fertigen Padelanlage."
+    }
+  },
+  "map": {
+    "title": "Standort Monheim am Rhein",
+    "eyebrow": "UNSER STANDORT",
+    "country": "Deutschland",
+    "description": "Von unserem Standort in Monheim am Rhein aus betreuen wir Padelprojekte in Deutschland und den umliegenden Regionen. Wir freuen uns auf Ihre Anfrage."
+  },
+  "cta": {
+    "eyebrow": "KONTAKT & BERATUNG",
+    "title": "Gemeinsam Ihr",
+    "highlight": "Padelprojekt",
+    "ending": "realisieren.",
+    "description": "Sie planen eine Padelanlage oder suchen einen zuverlässigen Partner für Ihr Vorhaben? Wir freuen uns auf Ihre Anfrage.",
+    "button": "JETZT KONTAKT AUFNEHMEN"
+  }
+},
+"projectsContent": {
+  "countries": {
+    "Österreich": "Österreich",
+    "Deutschland": "Deutschland",
+    "Schweiz": "Schweiz"
+  },
+  "terms": {
+    "Indoor": "Indoor",
+    "Outdoor": "Outdoor",
+    "Panorama-Padelplätze": "Panorama-Padelplätze",
+    "Panorama-Doppelplätze": "Panorama-Doppelplätze"
+  },
+  "items": {
+    "padel-field-soell": {
+      "description": "Einblicke in die Padelanlage in Söll, Österreich.",
+      "overview": "Dieses Referenzprojekt befindet sich in Söll in Österreich. Die Projektgalerie zeigt die Anlage aus verschiedenen Perspektiven. Weitere technische Angaben und der genaue Leistungsumfang werden nach Abstimmung mit COURTS&PADEL ergänzt."
+    },
+    "padel-factory-berlin": {
+      "description": "12 Panorama-Padelplätze in einer Indoor-Anlage in Berlin.",
+      "overview": "Die Padel Factory in Berlin umfasst zwölf Panorama-Padelplätze im Innenbereich. Die Bilder geben Einblicke in die Anlage und die räumliche Anordnung der Spielfelder. Ergänzende Angaben zu den ausgeführten Arbeiten können nach Bestätigung durch COURTS&PADEL ergänzt werden.",
+      "features": ["12 Panorama-Padelplätze", "Indoor-Anlage"]
+    },
+    "padelwerk-dulliken": {
+      "description": "8 Panorama-Padelplätze in einer Indoor-Anlage in Dulliken.",
+      "overview": "Das Padelwerk in Dulliken in der Schweiz umfasst acht Panorama-Padelplätze im Innenbereich. In der Galerie sind unterschiedliche Ansichten der Anlage dokumentiert. Weitere technische Details werden ergänzt, sobald sie vom Kunden freigegeben sind.",
+      "features": ["8 Panorama-Padelplätze", "Indoor-Anlage"]
+    },
+    "padelfokus-hemer": {
+      "description": "3 Panorama-Doppelplätze mit mobilen Systemen im Außenbereich.",
+      "overview": "Das Projekt PadelFokus in Hemer umfasst drei Panorama-Doppelplätze im Außenbereich. Die Anlage nutzt mobile Systeme. Die Galerie zeigt die Padelplätze sowie unterschiedliche Ansichten des Standorts.",
+      "features": ["3 Panorama-Doppelplätze", "Mobile Systeme", "Outdoor-Anlage"]
+    },
+    "padel-city-rotenburg": {
+      "description": "Einblicke in den Padelstandort in Rotenburg.",
+      "overview": "Padel City in Rotenburg ist Teil der Projektreferenzen von COURTS&PADEL. Das vorhandene Bild zeigt den Standort. Angaben zu Anzahl und Typ der Plätze sowie zum genauen Leistungsumfang werden nach Bestätigung ergänzt."
+    },
+    "padel-arena-mering": {
+      "description": "Padelanlage in Mering – Impressionen aus dem Projekt.",
+      "overview": "Dieses Referenzprojekt befindet sich in Mering in Deutschland. Die Fotogalerie dokumentiert die Anlage aus mehreren Perspektiven. Der genaue technische Aufbau und die ausgeführten Leistungen werden nach Rücksprache mit COURTS&PADEL beschrieben."
+    },
+    "tennisclub-gruen-berlin": {
+      "description": "Projektimpressionen vom Tennisclub Brühl in Berlin.",
+      "overview": "Die Bilder dieses Referenzprojekts zeigen den Standort des Tennisclubs Brühl in Berlin. Weitere Informationen zur Padelanlage, zu den gewählten Systemen und zum ausgeführten Leistungsumfang folgen nach Freigabe durch den Kunden."
+    },
+    "sportfreunde-sachsenhausen": {
+      "description": "Einblicke in den Padelstandort in Frankfurt-Sachsenhausen.",
+      "overview": "Das Projekt bei den Sportfreunden Sachsenhausen befindet sich in Frankfurt am Main. Die bereitgestellten Bilder geben einen ersten Eindruck des Standorts. Weitere Angaben zu den Leistungen und den technischen Eigenschaften werden nach Bestätigung ergänzt."
+    },
+    "padel-geldern": {
+      "description": "Fotografische Einblicke in ein Padelprojekt in Geldern.",
+      "overview": "Dieses Referenzprojekt ist in Geldern in Deutschland verortet. Die Bilder dokumentieren die Padelanlage. Projektname, Ausführungsart und technische Details werden nach Bestätigung durch COURTS&PADEL ergänzt."
+    },
+    "eintracht-frankfurt-tennis": {
+      "description": "Einblicke in das Padelprojekt bei Eintracht Frankfurt Tennis.",
+      "overview": "Die Projektreferenz Eintracht Frankfurt Tennis befindet sich in Frankfurt am Main. Die Galerie zeigt den Standort anhand der bereitgestellten Originalbilder. Zusätzliche Angaben zu Anzahl, Bauweise und Art der ausgeführten Arbeiten werden nach Rücksprache ergänzt."
+    },
+    "TSV-Meerbusch-e.V.-Tennis": {
+      "description": "Einblicke in das Padelprojekt beim TSV Meerbusch e.V. – Tennis.",
+      "overview": "Dieses Referenzprojekt befindet sich in Meerbusch. Die Galerie zeigt den Standort anhand der bereitgestellten Bilder. Weitere technische Angaben und der genaue Leistungsumfang werden nach Abstimmung mit COURTS&PADEL ergänzt."
+    },
+    "Projekt-Meerbusch": {
+      "title": "Projekt Meerbusch",
+      "description": "Herstellung eines Ringfundaments mit Drainbeton als Grundlage für eine Padelanlage.",
+      "overview": "Das Projekt in Meerbusch ist ein Beispiel für eine erfolgreiche Padelanlage. Die Bilder zeigen die verschiedenen Aspekte des Projekts."
+    }
+  }
+}
 }

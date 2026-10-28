@@ -1,0 +1,422 @@
+{
+  "hero": {
+    "imageAlt": "Pistas de pádel al atardecer",
+    "eyebrow": "PISTAS DE PÁDEL A MEDIDA",
+    "sale": "VENTA",
+    "installation": "INSTALACIÓN",
+    "maintenance": "MANTENIMIENTO",
+    "description": "Soluciones integrales para instalaciones de pádel: desde la planificación y la cimentación hasta la entrega, el montaje profesional y el mantenimiento a largo plazo.",
+    "quote": "SOLICITAR PRESUPUESTO",
+    "projects": "VER PROYECTOS",
+    "discover": "DESCUBRIR MÁS"
+  },
+  "maintenance": {
+  "imageAlt": "Mantenimiento profesional del césped artificial de una pista de pádel",
+  "eyebrow": "MANTENIMIENTO PROFESIONAL",
+  "title": "Mantenga sus instalaciones de pádel",
+  "titleHighlight": "en perfectas condiciones a largo plazo.",
+  "description": "El mantenimiento periódico ayuda a preservar la calidad de juego, la seguridad y la vida útil de sus instalaciones de pádel. COURTS&PADEL ofrece servicios profesionales de mantenimiento y asistencia técnica para instalaciones de pádel.",
+  "cta": "SOLICITAR MANTENIMIENTO",
+  "services": {
+    "turf": {
+      "title": "CUIDADO DEL CÉSPED",
+      "description": "Limpieza, cepillado y distribución uniforme del material de relleno."
+    },
+    "structure": {
+      "title": "CRISTALES Y ESTRUCTURA",
+      "description": "Inspección de los paneles de cristal, las estructuras de acero y las fijaciones."
+    },
+    "equipment": {
+      "title": "RED Y EQUIPAMIENTO",
+      "description": "Revisión de las redes y del equipamiento de la pista."
+    },
+    "repairs": {
+      "title": "REPARACIÓN Y SUSTITUCIÓN",
+      "description": "Reparación y sustitución de componentes dañados."
+    }
+  }
+},
+"servicesSection": {
+  "eyebrow": "NUESTROS SERVICIOS",
+  "title": "Todo para sus",
+  "titleHighlight": "instalaciones de pádel.",
+  "description": "Desde la planificación y la cimentación hasta la entrega y el montaje, pasando por las cubiertas, los sistemas móviles y el mantenimiento profesional: ofrecemos soluciones a medida para su proyecto de pádel.",
+  "cta": "Descubrir todos los servicios",
+  "items": {
+    "sales": {
+      "title": "VENTA DE PISTAS DE PÁDEL",
+      "description": "Venta y entrega de distintos modelos de pistas de pádel y soluciones a medida."
+    },
+    "installation": {
+      "title": "MONTAJE E INSTALACIÓN",
+      "description": "Montaje integral de instalaciones de pádel realizado por profesionales, con precisión, fiabilidad y rigor técnico."
+    },
+    "foundations": {
+      "title": "CIMENTACIÓN",
+      "description": "Trabajos profesionales de cimentación y hormigón para proporcionar una base sólida a sus instalaciones de pádel."
+    },
+    "mobile": {
+      "title": "SISTEMAS MÓVILES Y PLATAFORMAS",
+      "description": "Soluciones flexibles para emplazamientos con requisitos constructivos específicos."
+    },
+    "canopies": {
+      "title": "CUBIERTAS",
+      "description": "Soluciones de cubierta a medida para instalaciones de pádel."
+    },
+    "maintenance": {
+      "title": "MANTENIMIENTO Y SERVICIO",
+      "description": "Limpieza, inspección, conservación y reparación profesional de sus instalaciones de pádel."
+    }
+  }
+},
+"projectsSection": {
+  "eyebrow": "NUESTROS PROYECTOS",
+  "title": "Instalaciones de pádel",
+  "titleHighlight": "realizadas.",
+  "cta": "VER TODOS LOS PROYECTOS"
+},
+"ctaSection": {
+  "eyebrow": "CONTACTO",
+  "title": "¿Está planificando un",
+  "titleHighlight": "proyecto de pádel?",
+  "description": "Le asesoramos y elaboramos un presupuesto personalizado. Ya sea una nueva instalación, una ampliación o un servicio de mantenimiento, encontraremos juntos la solución adecuada para su proyecto.",
+  "projectCta": "CONSULTAR SU PROYECTO",
+  "maintenanceCta": "SOLICITAR MANTENIMIENTO",
+  "phoneLabel": "Teléfono",
+  "emailLabel": "Correo electrónico",
+  "locationLabel": "Ubicación",
+  "phonePlaceholder": "Su número de teléfono aquí",
+  "emailPlaceholder": "Su correo electrónico aquí",
+  "locationPlaceholder": "Su ubicación aquí"
+},
+"aboutSection": {
+  "eyebrow": "SOBRE COURTS&PADEL",
+  "title": "Su socio para",
+  "titleHighlight": "instalaciones de pádel profesionales.",
+  "description": "COURTS&PADEL ofrece soluciones profesionales para instalaciones de pádel. Junto con nuestros clientes, planificamos y coordinamos cada fase del proyecto: desde la cimentación y la entrega hasta el montaje especializado y el mantenimiento a largo plazo.",
+  "commitment": "Prestamos especial atención a la precisión del trabajo, la calidad y la ejecución fiable de nuestros proyectos.",
+  "cta": "CONOZCA MÁS SOBRE NOSOTROS",
+  "imageAlt": "El equipo de COURTS&PADEL durante el montaje de una pista de pádel",
+  "values": {
+    "quality": {
+      "title": "CALIDAD",
+      "description": "Materiales de alta calidad y una ejecución precisa."
+    },
+    "expertise": {
+      "title": "EXPERIENCIA",
+      "description": "Experiencia en la ejecución de diversos proyectos de pádel."
+    },
+    "reliability": {
+      "title": "FIABILIDAD",
+      "description": "Un socio profesional desde la planificación hasta la finalización."
+    },
+    "tailored": {
+      "title": "SOLUCIONES A MEDIDA",
+      "description": "Conceptos personalizados adaptados a sus necesidades."
+    }
+  }
+},
+"servicesPage": {
+  "hero": {
+    "imageAlt": "Instalaciones de pádel al atardecer",
+    "eyebrow": "NUESTROS SERVICIOS",
+    "title": "Soluciones profesionales",
+    "subtitle": "para",
+    "highlight": "sus instalaciones de pádel.",
+    "description": "Ya sea una nueva instalación de pádel, un montaje especializado o el mantenimiento de pistas existentes, COURTS&PADEL ofrece soluciones a medida adaptadas a las necesidades de su proyecto."
+  },
+  "items": {
+    "sales": {
+      "label": "VENTA DE PISTAS DE PÁDEL",
+      "title": "La pista adecuada",
+      "highlight": "para su proyecto.",
+      "description": "COURTS&PADEL ofrece la venta y entrega de distintos modelos de pistas de pádel. Junto con nuestros clientes, encontramos la solución adecuada para las necesidades y características de cada proyecto.",
+      "imageAlt": "Instalaciones de pádel con pistas azules"
+    },
+    "installation": {
+      "label": "MONTAJE E INSTALACIÓN",
+      "title": "Precisión en cada",
+      "highlight": "fase del montaje.",
+      "description": "Un montaje especializado es esencial para la calidad y el funcionamiento de una instalación de pádel. COURTS&PADEL realiza la instalación profesional de las pistas, desde la estructura de acero y los paneles de cristal hasta el césped artificial, la iluminación y el equipamiento.",
+      "imageAlt": "Montaje de una instalación de pádel"
+    },
+    "foundations": {
+      "label": "CIMENTACIÓN",
+      "title": "Una base sólida",
+      "highlight": "para sus instalaciones de pádel.",
+      "description": "Una cimentación correctamente ejecutada constituye la base de una instalación de pádel estable y duradera. COURTS&PADEL ofrece trabajos de cimentación y hormigón en colaboración con empresas especializadas. La ejecución se adapta a los requisitos del proyecto y a las condiciones del emplazamiento.",
+      "imageAlt": "Trabajos de cimentación para una pista de pádel"
+    },
+    "mobile": {
+      "label": "SISTEMAS MÓVILES Y PLATAFORMAS",
+      "title": "Soluciones flexibles para",
+      "highlight": "necesidades específicas.",
+      "description": "Cada emplazamiento presenta condiciones constructivas diferentes. COURTS&PADEL realiza el montaje de sistemas móviles y plataformas para pistas de pádel, así como la instalación de las pistas correspondientes. Estas soluciones permiten desarrollar proyectos de pádel en ubicaciones con requisitos específicos.",
+      "imageAlt": "Pistas de pádel sobre una plataforma elevada"
+    },
+    "canopies": {
+      "label": "CUBIERTAS",
+      "title": "Soluciones de cubierta adecuadas",
+      "highlight": "para sus instalaciones de pádel.",
+      "description": "COURTS&PADEL ofrece el suministro y montaje profesional de cubiertas para instalaciones de pádel. Junto con nuestros clientes, encontramos soluciones adaptadas a los requisitos del proyecto y a las condiciones del emplazamiento.",
+      "imageAlt": "Instalaciones de pádel cubiertas"
+    },
+    "maintenance": {
+      "label": "MANTENIMIENTO Y SERVICIO",
+      "title": "Cuidado y conservación",
+      "highlight": "profesionales.",
+      "description": "El mantenimiento periódico ayuda a preservar a largo plazo la calidad de juego, la seguridad y el funcionamiento de sus instalaciones de pádel. COURTS&PADEL se encarga de la inspección y limpieza de las instalaciones, del cuidado del césped artificial y, cuando sea necesario, de las reparaciones y sustituciones.",
+      "imageAlt": "Mantenimiento profesional de una pista de pádel"
+    }
+  },
+  "maintenanceCta": "SOLICITAR MANTENIMIENTO",
+  "contact": {
+    "eyebrow": "SU PRÓXIMO PROYECTO",
+    "title": "¿Está planificando un",
+    "highlight": "proyecto de pádel?",
+    "description": "Ya sea una nueva instalación de pádel, un montaje profesional o una solución a medida, hable con nosotros sobre su proyecto. Le asesoramos y elaboramos un presupuesto adecuado.",
+    "cta": "SOLICITAR PRESUPUESTO"
+  }
+},
+"projectsPage": {
+  "breadcrumb": "COURTS&PADEL / PROYECTOS",
+  "title": "Nuestros proyectos",
+  "description": "Descubra nuestras instalaciones de pádel realizadas."
+},
+"projectDetailPage": {
+  "allProjects": "Todos los proyectos",
+  "eyebrow": "COURTS&PADEL — PROYECTOS",
+  "projectPhoto": "Foto del proyecto",
+  "projectLabel": "01 — El proyecto",
+  "title": "Soluciones profesionales.",
+  "titleHighlight": "Una ejecución a medida.",
+  "specifications": "Datos del proyecto",
+  "location": "Ubicación",
+  "courtCount": "Número de pistas",
+  "courtType": "Tipo de pista",
+  "installation": "Ejecución",
+  "galleryLabel": "02 — Galería",
+  "galleryTitle": "En imágenes",
+  "photoCount": "{count, plural, one {# FOTO} other {# FOTOS}}",
+  "galleryImageAlt": "{title} — Foto {number}",
+  "nextProject": "Siguiente proyecto",
+  "nextProjectWithTitle": "Siguiente proyecto: {title}",
+  "featuresLabel": "03 — Ejecución",
+  "featuresTitle": "Características del proyecto"
+},
+"aboutPage": {
+  "hero": {
+    "imageAlt": "Montaje de una instalación de pádel",
+    "eyebrow": "SOBRE NOSOTROS",
+    "title": "Su socio para",
+    "subtitle": "instalaciones de pádel",
+    "highlight": "profesionales.",
+    "description": "COURTS&PADEL apuesta por el trabajo especializado, una colaboración fiable y soluciones a medida para instalaciones de pádel.",
+    "cta": "CONTACTAR"
+  },
+  "identity": {
+    "eyebrow": "QUIÉNES SOMOS",
+    "title": "Pasión por el pádel.",
+    "highlight": "Compromiso con la calidad.",
+    "description": "COURTS&PADEL es una empresa especializada en instalaciones de pádel, con sede en Monheim am Rhein.",
+    "commitment": "Acompañamos diversos proyectos de pádel y prestamos especial atención a una ejecución cuidada, un montaje preciso y una relación de confianza con nuestros clientes.",
+    "imageAlt": "Pista de pádel con paredes de cristal y césped artificial azul"
+  },
+  "approach": {
+    "eyebrow": "CÓMO TRABAJAMOS",
+    "title": "Planificamos juntos.",
+    "highlight": "Ejecutamos con profesionalidad.",
+    "description": "Cada proyecto de pádel tiene requisitos diferentes. Por ello, estudiamos con nuestros clientes las condiciones de cada proyecto y adaptamos su ejecución.",
+    "coordination": "Coordinamos cuidadosamente las distintas fases del trabajo y damos gran importancia a una ejecución profesional.",
+    "imageAlt": "Coordinación de la planificación de una instalación de pádel"
+  },
+  "values": {
+    "eyebrow": "LO QUE NOS DISTINGUE",
+    "title": "Nuestros",
+    "highlight": "valores.",
+    "items": {
+      "quality": {
+        "title": "CALIDAD",
+        "description": "Un trabajo cuidado y una ejecución precisa en cada proyecto."
+      },
+      "expertise": {
+        "title": "COMPETENCIA TÉCNICA",
+        "description": "Soluciones prácticas para distintos proyectos de pádel."
+      },
+      "reliability": {
+        "title": "FIABILIDAD",
+        "description": "Una colaboración comprometida y procesos de proyecto coordinados."
+      },
+      "tailored": {
+        "title": "SOLUCIONES A MEDIDA",
+        "description": "Adaptación a los requisitos de cada proyecto."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "NUESTROS PROYECTOS",
+    "title": "Proyectos que",
+    "highlight": "hablan por sí solos.",
+    "description": "Descubra una selección de instalaciones de pádel realizadas por COURTS&PADEL.",
+    "cta": "VER NUESTROS PROYECTOS",
+    "images": {
+      "indoor": "Instalaciones de pádel en interior",
+      "outdoor": "Instalaciones de pádel al aire libre con césped artificial azul",
+      "aerial": "Vista aérea de unas instalaciones de pádel"
+    }
+  }
+},
+"contactPage": {
+  "hero": {
+    "eyebrow": "CONTACTO Y ASESORAMIENTO",
+    "title": "Hablemos de",
+    "highlight": "su proyecto de pádel",
+    "ending": "juntos.",
+    "description": "¿Está planificando una nueva instalación de pádel, necesita ayuda con el montaje o desea solicitar mantenimiento? Contacte con nosotros: estaremos encantados de conocer su proyecto."
+  },
+  "details": {
+    "imageAlt": "Instalaciones de pádel con césped artificial azul",
+    "eyebrow": "CONTACTE DIRECTAMENTE",
+    "title": "Nuestros",
+    "highlight": "datos de contacto.",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "location": "Ubicación",
+    "availabilityTitle": "Nuestra disponibilidad",
+    "availabilityText": "Nos esforzamos por responder a su consulta lo antes posible."
+  },
+  "form": {
+    "eyebrow": "CONSULTA SOBRE SU PROYECTO",
+    "title": "Envíe una",
+    "highlight": "consulta sin compromiso.",
+    "description": "Rellene el formulario y nos pondremos en contacto con usted lo antes posible.",
+    "loading": "Cargando formulario …",
+    "requestType": "Tipo de consulta",
+    "types": {
+      "project": "Nueva instalación de pádel",
+      "installation": "Montaje e instalación",
+      "maintenance": "Mantenimiento y reparación",
+      "other": "Otra consulta"
+    },
+    "name": "Nombre / Empresa",
+    "namePlaceholder": "Su nombre o empresa",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "nombre@empresa.es",
+    "phone": "Número de teléfono",
+    "phonePlaceholder": "+34 …",
+    "location": "Ubicación del proyecto",
+    "locationPlaceholder": "Ciudad / País",
+    "message": "Su mensaje",
+    "messagePlaceholder": "Describa brevemente su proyecto, el número de pistas de pádel, los servicios que necesita u otros detalles …",
+    "attachments": "Adjuntar archivos (opcional)",
+    "chooseFiles": "Seleccionar archivos",
+    "fileHint": "JPG, PNG, PDF · tamaño total máximo: 3 MB",
+    "removeFile": "Eliminar el archivo {name}",
+    "privacy": "He leído y acepto la <privacy>política de privacidad</privacy>.",
+    "sending": "ENVIANDO …",
+    "submit": "ENVIAR CONSULTA",
+    "sizeError": "El tamaño total de los archivos no debe superar los 3 MB.",
+    "success": "¡Gracias! Su consulta se ha enviado correctamente.",
+    "error": "No se ha podido enviar su consulta. Inténtelo de nuevo o contacte con nosotros por correo electrónico."
+  },
+  "benefits": {
+    "response": {
+      "title": "Respuesta rápida",
+      "description": "Nos pondremos en contacto con usted en breve."
+    },
+    "advice": {
+      "title": "Asesoramiento personalizado",
+      "description": "Soluciones a medida para su proyecto."
+    },
+    "team": {
+      "title": "Equipo experimentado",
+      "description": "Una ejecución profesional y fiable."
+    },
+    "service": {
+      "title": "Servicio integral",
+      "description": "Desde la planificación hasta la instalación de pádel terminada."
+    }
+  },
+  "map": {
+    "title": "Ubicación en Monheim am Rhein",
+    "eyebrow": "NUESTRA UBICACIÓN",
+    "country": "Alemania",
+    "description": "Desde nuestra sede en Monheim am Rhein, acompañamos proyectos de pádel en Alemania y las regiones cercanas. Estaremos encantados de recibir su consulta."
+  },
+  "cta": {
+    "eyebrow": "CONTACTO Y ASESORAMIENTO",
+    "title": "Juntos, hagamos realidad",
+    "highlight": "su proyecto de pádel",
+    "ending": ".",
+    "description": "¿Está planificando una instalación de pádel o busca un socio fiable para su proyecto? Estaremos encantados de atenderle.",
+    "button": "CONTACTE CON NOSOTROS"
+  }
+},
+"projectsContent": {
+  "countries": {
+    "Österreich": "Austria",
+    "Deutschland": "Alemania",
+    "Schweiz": "Suiza"
+  },
+  "terms": {
+    "Indoor": "En interior",
+    "Outdoor": "Al aire libre",
+    "Panorama-Padelplätze": "Pistas de pádel panorámicas",
+    "Panorama-Doppelplätze": "Pistas dobles panorámicas"
+  },
+  "items": {
+    "padel-field-soell": {
+      "description": "Descubra las instalaciones de pádel de Söll, Austria.",
+      "overview": "Este proyecto de referencia se encuentra en Söll, Austria. La galería muestra las instalaciones desde distintas perspectivas. La información técnica adicional y el alcance exacto de los trabajos se añadirán tras consultar con COURTS&PADEL."
+    },
+    "padel-factory-berlin": {
+      "description": "12 pistas de pádel panorámicas en un complejo cubierto en Berlín.",
+      "overview": "Padel Factory en Berlín cuenta con doce pistas de pádel panorámicas en interior. Las imágenes muestran las instalaciones y la distribución de las pistas. Se podrá añadir información adicional sobre los trabajos realizados tras la confirmación de COURTS&PADEL.",
+      "features": ["12 pistas de pádel panorámicas", "Instalaciones en interior"]
+    },
+    "padelwerk-dulliken": {
+      "description": "8 pistas de pádel panorámicas en un complejo cubierto en Dulliken.",
+      "overview": "Padelwerk en Dulliken, Suiza, cuenta con ocho pistas de pádel panorámicas en interior. La galería documenta distintas vistas de las instalaciones. Los detalles técnicos adicionales se añadirán una vez aprobados por el cliente.",
+      "features": ["8 pistas de pádel panorámicas", "Instalaciones en interior"]
+    },
+    "padelfokus-hemer": {
+      "description": "3 pistas dobles panorámicas al aire libre con sistemas móviles.",
+      "overview": "El proyecto PadelFokus en Hemer cuenta con tres pistas dobles panorámicas al aire libre. Las instalaciones utilizan sistemas móviles. La galería muestra las pistas de pádel y distintas vistas del emplazamiento.",
+      "features": ["3 pistas dobles panorámicas", "Sistemas móviles", "Instalaciones al aire libre"]
+    },
+    "padel-city-rotenburg": {
+      "description": "Descubra el recinto de pádel de Rotenburg.",
+      "overview": "Padel City en Rotenburg forma parte de los proyectos de referencia de COURTS&PADEL. La imagen disponible muestra el emplazamiento. La información sobre el número y el tipo de pistas, así como el alcance exacto de los trabajos, se añadirá tras su confirmación."
+    },
+    "padel-arena-mering": {
+      "description": "Instalaciones de pádel en Mering: imágenes del proyecto.",
+      "overview": "Este proyecto de referencia se encuentra en Mering, Alemania. La galería documenta las instalaciones desde varias perspectivas. La configuración técnica exacta y los trabajos realizados se describirán tras consultar con COURTS&PADEL."
+    },
+    "tennisclub-gruen-berlin": {
+      "description": "Imágenes del proyecto del Tennisclub Brühl en Berlín.",
+      "overview": "Las imágenes de este proyecto de referencia muestran el emplazamiento del Tennisclub Brühl en Berlín. La información adicional sobre las instalaciones de pádel, los sistemas elegidos y el alcance de los trabajos se añadirá tras la aprobación del cliente."
+    },
+    "sportfreunde-sachsenhausen": {
+      "description": "Descubra el recinto de pádel de Frankfurt-Sachsenhausen.",
+      "overview": "El proyecto de Sportfreunde Sachsenhausen se encuentra en Fráncfort del Meno. Las imágenes facilitadas ofrecen una primera impresión del emplazamiento. Se añadirá información adicional sobre los servicios y las características técnicas tras su confirmación."
+    },
+    "padel-geldern": {
+      "description": "Una mirada fotográfica a un proyecto de pádel en Geldern.",
+      "overview": "Este proyecto de referencia se encuentra en Geldern, Alemania. Las imágenes documentan las instalaciones de pádel. El nombre del proyecto, el método de ejecución y los detalles técnicos se añadirán tras la confirmación de COURTS&PADEL."
+    },
+    "eintracht-frankfurt-tennis": {
+      "description": "Descubra el proyecto de pádel de Eintracht Frankfurt Tennis.",
+      "overview": "El proyecto de referencia Eintracht Frankfurt Tennis se encuentra en Fráncfort del Meno. La galería muestra el emplazamiento mediante las imágenes originales facilitadas. Se añadirá información sobre el número de pistas, su construcción y los trabajos realizados tras la consulta correspondiente."
+    },
+    "TSV-Meerbusch-e.V.-Tennis": {
+      "description": "Descubra el proyecto de pádel del TSV Meerbusch e.V. – Tennis.",
+      "overview": "Este proyecto de referencia se encuentra en Meerbusch. La galería muestra el emplazamiento mediante las imágenes facilitadas. La información técnica adicional y el alcance exacto de los trabajos se añadirán tras consultar con COURTS&PADEL."
+    },
+    "Projekt-Meerbusch": {
+      "title": "Proyecto Meerbusch",
+      "description": "Construcción de una cimentación perimetral con hormigón drenante como base para una instalación de pádel.",
+      "overview": "El proyecto de Meerbusch es un ejemplo de una instalación de pádel realizada con éxito. Las imágenes muestran los distintos aspectos del proyecto."
+    }
+  }
+}
+}
