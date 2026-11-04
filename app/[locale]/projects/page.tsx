@@ -5,9 +5,7 @@ import ProjectCard from "../../../components/projects/project-card";
 import CTASection from "@/sections/cta-section";
 
 type Props = {
-  params: Promise<{
-    locale: string;
-  }>;
+  params: Promise<{ locale: string }>;
 };
 
 export default async function ProjectsPage({ params }: Props) {
@@ -18,9 +16,17 @@ export default async function ProjectsPage({ params }: Props) {
     namespace: "projectsPage",
   });
 
+  const tProjects = await getTranslations({
+    locale,
+    namespace: "projectsContent",
+  });
+
+  const viewLabel = tProjects.has("viewProject")
+    ? tProjects("viewProject")
+    : undefined;
+
   return (
     <main className="min-h-screen bg-[#F7F8FA] text-[#071426]">
-      {/* HERO */}
       <section className="bg-[#071426] px-5 py-20 text-white">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs font-semibold tracking-widest text-[#F50087]">
@@ -37,18 +43,35 @@ export default async function ProjectsPage({ params }: Props) {
         </div>
       </section>
 
-      {/* PROJECTS */}
       <section className="mx-auto grid max-w-7xl gap-6 px-5 py-16 sm:grid-cols-2 lg:grid-cols-3 lg:px-8">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.slug}
-            project={project}
-            locale={locale}
-          />
-        ))}
+        {projects.map((project) => {
+          const itemKey =
+            project.slug === "TSV-Meerbusch-e.V.-Tennis"
+              ? "tsv-meerbusch-ev-tennis"
+              : project.slug;
+
+          const descriptionKey = `items.${itemKey}.description`;
+          const countryKey = `countries.${itemKey}.country`;
+
+          return (
+            <ProjectCard
+              key={project.slug}
+              locale={locale}
+              viewLabel={viewLabel}
+              project={{
+                ...project,
+                description: tProjects.has(descriptionKey)
+                  ? tProjects(descriptionKey)
+                  : project.description,
+                country: tProjects.has(countryKey)
+                  ? tProjects(countryKey)
+                  : project.country,
+              }}
+            />
+          );
+        })}
       </section>
 
-      {/* CONTACT CTA */}
       <CTASection locale={locale} />
     </main>
   );

@@ -1,4 +1,8 @@
 import type { ReactNode } from "react";
+import WhatsAppButton from "@/components/whatsapp-button";
+import { Suspense } from "react";
+import QuoteModal from "@/components/quote-modal";
+import ContactForm from "@/components/contact-form";
 
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
@@ -41,13 +45,17 @@ export default async function LocaleLayout({
  return (
   <html lang={locale}>
     <body>
-      <NextIntlClientProvider
-        locale={locale}
-        messages={messages}
-      >
+      <NextIntlClientProvider locale={locale} messages={messages}>
         <Navbar locale={locale} />
         {children}
-        <Footer locale={locale}/>
+        <Footer locale={locale} />
+        <WhatsAppButton />
+
+        <QuoteModal>
+          <Suspense fallback={null}>
+            <ContactForm />
+          </Suspense>
+        </QuoteModal>
       </NextIntlClientProvider>
     </body>
   </html>

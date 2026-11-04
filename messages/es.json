@@ -408,7 +408,7 @@
       "description": "Descubra el proyecto de pádel de Eintracht Frankfurt Tennis.",
       "overview": "El proyecto de referencia Eintracht Frankfurt Tennis se encuentra en Fráncfort del Meno. La galería muestra el emplazamiento mediante las imágenes originales facilitadas. Se añadirá información sobre el número de pistas, su construcción y los trabajos realizados tras la consulta correspondiente."
     },
-    "TSV-Meerbusch-e.V.-Tennis": {
+    "tsv-meerbusch-ev-tennis": {
       "description": "Descubra el proyecto de pádel del TSV Meerbusch e.V. – Tennis.",
       "overview": "Este proyecto de referencia se encuentra en Meerbusch. La galería muestra el emplazamiento mediante las imágenes facilitadas. La información técnica adicional y el alcance exacto de los trabajos se añadirán tras consultar con COURTS&PADEL."
     },
@@ -417,6 +417,14 @@
       "description": "Construcción de una cimentación perimetral con hormigón drenante como base para una instalación de pádel.",
       "overview": "El proyecto de Meerbusch es un ejemplo de una instalación de pádel realizada con éxito. Las imágenes muestran los distintos aspectos del proyecto."
     }
-  }
+  },
+  "viewProject": "Ver proyecto"
+},
+"quoteModal": {
+  "title": "Solicite",
+  "highlight": "un presupuesto sin compromiso.",
+  "description": "¿Está planificando un proyecto de pádel o necesita mantenimiento? Envíenos su consulta.",
+  "close": "Cerrar ventana",
+  "whatsapp": "Contáctenos por WhatsApp"
 }
 }

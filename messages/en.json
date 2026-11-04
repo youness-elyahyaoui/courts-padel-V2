@@ -408,7 +408,7 @@
       "description": "A look at the padel project at Eintracht Frankfurt Tennis.",
       "overview": "The Eintracht Frankfurt Tennis reference project is located in Frankfurt am Main. The gallery shows the site through the original images supplied. Additional information about court numbers, construction methods and the work carried out will be added following consultation."
     },
-    "TSV-Meerbusch-e.V.-Tennis": {
+    "tsv-meerbusch-ev-tennis": {
       "description": "A look at the padel project at TSV Meerbusch e.V. – Tennis.",
       "overview": "This reference project is located in Meerbusch. The gallery shows the site through the supplied images. Further technical information and the exact scope of work will be added following consultation with COURTS&PADEL."
     },
@@ -417,6 +417,14 @@
       "description": "Construction of a ring foundation with permeable concrete as the base for a padel facility.",
       "overview": "The Meerbusch project is an example of a successful padel facility. The images show the different aspects of the project."
     }
-  }
+  },
+  "viewProject": "View project"
+},
+"quoteModal": {
+  "title": "Request",
+  "highlight": "a no-obligation quote.",
+  "description": "Planning a padel project or need maintenance? Send us your enquiry.",
+  "close": "Close window",
+  "whatsapp": "Contact us on WhatsApp"
 }
 }

@@ -408,7 +408,7 @@
       "description": "Einblicke in das Padelprojekt bei Eintracht Frankfurt Tennis.",
       "overview": "Die Projektreferenz Eintracht Frankfurt Tennis befindet sich in Frankfurt am Main. Die Galerie zeigt den Standort anhand der bereitgestellten Originalbilder. Zusätzliche Angaben zu Anzahl, Bauweise und Art der ausgeführten Arbeiten werden nach Rücksprache ergänzt."
     },
-    "TSV-Meerbusch-e.V.-Tennis": {
+    "tsv-meerbusch-ev-tennis": {
       "description": "Einblicke in das Padelprojekt beim TSV Meerbusch e.V. – Tennis.",
       "overview": "Dieses Referenzprojekt befindet sich in Meerbusch. Die Galerie zeigt den Standort anhand der bereitgestellten Bilder. Weitere technische Angaben und der genaue Leistungsumfang werden nach Abstimmung mit COURTS&PADEL ergänzt."
     },
@@ -418,5 +418,12 @@
       "overview": "Das Projekt in Meerbusch ist ein Beispiel für eine erfolgreiche Padelanlage. Die Bilder zeigen die verschiedenen Aspekte des Projekts."
     }
   }
+},
+"quoteModal": {
+  "title": "Jetzt",
+  "highlight": "unverbindlich anfragen.",
+  "description": "Sie planen ein Padelprojekt oder benötigen Wartungsarbeiten? Senden Sie uns Ihre Anfrage.",
+  "close": "Fenster schließen",
+  "whatsapp": "Direkt über WhatsApp kontaktieren"
 }
 }

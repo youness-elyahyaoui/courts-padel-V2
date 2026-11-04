@@ -46,6 +46,7 @@ const translations: Record<string, ProjectsContent> = {
 const baseProjects: ProjectSource[] = [
   {
     slug: "padel-field-soell",
+    type: "Outdoor",
     title: "Padel Field",
     city: "Söll",
     country: "Österreich",
@@ -54,7 +55,6 @@ const baseProjects: ProjectSource[] = [
       "/projects/projet-01/02.webp",
       "/projects/projet-01/03.webp",
       "/projects/projet-01/04.jpeg",
-      "/projects/projet-01/05.jpeg",
       "/projects/projet-01/06.jpeg",
       "/projects/projet-01/07.jpeg",
     ],
@@ -113,6 +113,7 @@ const baseProjects: ProjectSource[] = [
   {
     slug: "padel-city-rotenburg",
     title: "Padel City",
+    type: "Indoor",
     city: "Rotenburg",
     country: "Deutschland",
     images: [
@@ -122,6 +123,7 @@ const baseProjects: ProjectSource[] = [
   {
     slug: "padel-arena-mering",
     title: "Padel Arena",
+    type: "Outdoor",
     city: "Mering",
     country: "Deutschland",
     images: [
@@ -132,6 +134,7 @@ const baseProjects: ProjectSource[] = [
     slug: "tennisclub-gruen-berlin",
     title: "Tennisclub Brühl",
     city: "Berlin",
+    type: "Outdoor",
     country: "Deutschland",
     images: [
       "/projects/projet-07/01.webp",
@@ -144,6 +147,7 @@ const baseProjects: ProjectSource[] = [
     slug: "sportfreunde-sachsenhausen",
     title: "Sportfreunde Sachsenhausen",
     city: "Frankfurt",
+    type: "Outdoor",
     country: "Deutschland",
     images: [
       "/projects/projet-08/01.webp",
@@ -154,6 +158,7 @@ const baseProjects: ProjectSource[] = [
     slug: "padel-geldern",
     title: "Tennisclub Geldern",
     city: "Geldern",
+    type: "Outdoor",
     country: "Deutschland",
     images: [
       "/projects/projet-09/01.webp",
@@ -165,6 +170,7 @@ const baseProjects: ProjectSource[] = [
     slug: "eintracht-frankfurt-tennis",
     title: "Eintracht Frankfurt Tennis",
     city: "Frankfurt",
+    type: "Outdoor",
     country: "Deutschland",
     images: [
       "/projects/projet-10/01.webp",
@@ -173,9 +179,10 @@ const baseProjects: ProjectSource[] = [
     ],
   },
   {
-    slug: "TSV-Meerbusch-e.V.-Tennis",
+    slug: "tsv-meerbusch-ev-tennis",
     title: "TSV Meerbusch e.V. - Tennis",
     city: "Meerbusch",
+    type: "Outdoor",
     country: "Deutschland",
     images: [
       "/projects/projet-11/01.jpeg",
@@ -190,6 +197,7 @@ const baseProjects: ProjectSource[] = [
     slug: "Projekt-Meerbusch",
     title: "Projekt Meerbusch",
     city: "Meerbusch",
+    type: "Outdoor",
     country: "Deutschland",
     images: [
       "/projects/projet-12/04.jpeg",
