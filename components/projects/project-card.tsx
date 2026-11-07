@@ -10,12 +10,17 @@ type Props = {
   viewLabel?: string;
 };
 
-export default function ProjectCard({
-  project,
-  locale,
-  viewLabel = "PROJEKT ANSEHEN",
-}: Props) {
+const defaultViewLabels: Partial<Record<string, string>> = {
+  de: "Projekt ansehen",
+  en: "View project",
+  fr: "Voir le projet",
+  es: "Ver proyecto",
+};
+
+export default function ProjectCard({ project, locale, viewLabel }: Props) {
   const image = project.images[0];
+  const buttonLabel =
+    viewLabel ?? defaultViewLabels[locale] ?? "Projekt ansehen";
 
   return (
     <Link
@@ -71,7 +76,7 @@ export default function ProjectCard({
           )}
 
           <div className="mt-5 flex items-center gap-2 text-xs font-bold uppercase text-[#F50087]">
-            {viewLabel}
+            {buttonLabel}
             <ArrowUpRight size={15} aria-hidden="true" />
           </div>
         </div>

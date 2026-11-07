@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 const services = [
   {
     key: "sales",
-    icon: "/icons/icon 1.svg",
+    icon: "/icons/terrain-padel.svg",
   },
   {
     key: "installation",
@@ -17,19 +17,19 @@ const services = [
   },
   {
     key: "foundations",
-    icon: "/icons/icon 3.svg",
+    icon: "/icons/construction-padel.svg",
   },
   {
     key: "mobile",
-    icon: "/icons/icon 4.svg",
+    icon: "/icons/terrain-padel-face.svg",
   },
   {
     key: "canopies",
-    icon: "/icons/icon 5.svg",
+    icon: "/icons/terrain-padel-couvert.svg",
   },
   {
     key: "maintenance",
-    icon: "/icons/icon 6.svg",
+    icon: "/icons/entretien-padel.svg",
   },
 ] as const;
 

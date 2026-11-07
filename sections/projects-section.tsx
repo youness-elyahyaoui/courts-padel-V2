@@ -13,6 +13,16 @@ type Props = {
   locale: string;
 };
 
+type ProjectsContent = {
+  countries?: Partial<Record<string, string>>;
+  viewProject?: string;
+  badges?: {
+    indoor?: string;
+    outdoor?: string;
+  };
+  items?: Partial<Record<string, { description?: string }>>;
+};
+
 const messages = { de, en, fr, es };
 
 type Locale = keyof typeof messages;
@@ -23,7 +33,8 @@ function isSupportedLocale(locale: string): locale is Locale {
 
 export default function ProjectsSection({ locale }: Props) {
   const currentLocale = isSupportedLocale(locale) ? locale : "de";
-  const t = messages[currentLocale].projectsSection;
+  const { projectsSection: t, projectsContent } = messages[currentLocale];
+  const content: ProjectsContent = projectsContent;
 
   return (
     <section
@@ -40,20 +51,13 @@ export default function ProjectsSection({ locale }: Props) {
 
             <h2 className="text-3xl font-extrabold tracking-tight md:text-5xl">
               {t.title}{" "}
-              <span className="text-[#F50087]">
-                {t.titleHighlight}
-              </span>
+              <span className="text-[#F50087]">{t.titleHighlight}</span>
             </h2>
           </div>
 
           <Link
             href={`/${currentLocale}/projects`}
-            className="
-              inline-flex items-center gap-2
-              rounded border border-white/60
-              px-5 py-3 text-xs font-bold
-              hover:bg-white hover:text-[#071426]
-            "
+            className="inline-flex items-center gap-2 rounded border border-white/60 px-5 py-3 text-xs font-bold hover:bg-white hover:text-[#071426]"
           >
             {t.cta}
             <ArrowRight size={17} aria-hidden="true" />
@@ -65,7 +69,18 @@ export default function ProjectsSection({ locale }: Props) {
             <ProjectCard
               key={project.slug}
               locale={currentLocale}
-              project={project}
+              project={{
+                ...project,
+                country: content.countries?.[project.country] ?? project.country,
+                description:
+                  content.items?.[project.slug]?.description ??
+                  project.description,
+              }}
+              labels={{
+                viewProject: content.viewProject,
+                indoor: content.badges?.indoor,
+                outdoor: content.badges?.outdoor,
+              }}
             />
           ))}
         </div>

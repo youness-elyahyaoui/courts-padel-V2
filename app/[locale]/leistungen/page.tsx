@@ -7,37 +7,37 @@ const services = [
     id: "verkauf",
     key: "sales",
     image: "/images/verkauf.png",
-    icon: "/icons/icon 1.svg",
+    icon: "/icons/terrain-padel.svg",
   },
   {
     id: "montage",
     key: "installation",
     image: "/images/montage.png",
     icon: "/icons/icon 2.svg",
-  },
+  },  
   {
     id: "fundamentierung",
     key: "foundations",
     image: "/images/fundamentierung.png",
-    icon: "/icons/icon 3.svg",
+    icon: "/icons/construction-padel.svg"
   },
   {
     id: "mobile-systeme",
     key: "mobile",
     image: "/images/mobile-systeme.jpeg",
-    icon: "/icons/icon 4.svg",
+    icon: "/icons/terrain-padel-face.svg",
   },
   {
     id: "ueberdachungen",
     key: "canopies",
     image: "/images/ueberdachungen.png",
-    icon: "/icons/icon 5.svg",
+    icon: "/icons/terrain-padel-couvert.svg",
   },
   {
     id: "wartung",
     key: "maintenance",
     image: "/images/wartung.png",
-    icon: "/icons/icon 6.svg",
+    icon: "/icons/entretien-padel.svg",
   },
 ] as const;
 
