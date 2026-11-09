@@ -4,6 +4,8 @@ import { ArrowUpRight, MapPin } from "lucide-react";
 
 import type { Project } from "../../data/projects";
 
+//reload page 
+
 type Props = {
   project: Project;
   locale: string;
