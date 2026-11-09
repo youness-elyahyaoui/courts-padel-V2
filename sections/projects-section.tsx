@@ -76,11 +76,7 @@ export default function ProjectsSection({ locale }: Props) {
                   content.items?.[project.slug]?.description ??
                   project.description,
               }}
-              labels={{
-                viewProject: content.viewProject,
-                indoor: content.badges?.indoor,
-                outdoor: content.badges?.outdoor,
-              }}
+             viewLabel={content.viewProject}
             />
           ))}
         </div>
