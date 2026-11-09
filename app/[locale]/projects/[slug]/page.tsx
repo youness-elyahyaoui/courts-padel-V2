@@ -8,7 +8,7 @@ import {
   MapPin,
 } from "lucide-react";
 
-import { projects } from "../../../../data/projects";
+import { getProjects, projects } from "../../../../data/projects";
 import CTASection from "@/sections/cta-section";
 
 type Props = {
@@ -30,7 +30,8 @@ export function generateStaticParams() {
 export default async function ProjectDetailPage({ params }: Props) {
   const { locale, slug } = await params;
 
-  const project = projects.find((item) => item.slug === slug);
+    const localizedProjects = getProjects(locale);
+  const project = localizedProjects.find((item) => item.slug === slug);
 
   if (!project) notFound();
 
@@ -57,12 +58,12 @@ export default async function ProjectDetailPage({ params }: Props) {
 
   const [cover, ...gallery] = project.images;
 
-  const currentIndex = projects.findIndex(
-    (item) => item.slug === slug
-  );
+  const currentIndex = localizedProjects.findIndex(
+  (item) => item.slug === slug
+);
 
   const nextProject =
-    projects[(currentIndex + 1) % projects.length];
+  localizedProjects[(currentIndex + 1) % localizedProjects.length];
 
   return (
     <main className="bg-[#F8F8F6] text-[#071426]">
