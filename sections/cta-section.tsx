@@ -40,13 +40,13 @@ export default function CTASection({ locale }: Props) {
       aria-labelledby="contact-title"
       className="
         relative isolate overflow-hidden
-        scroll-mt-24 bg-[#071426]
+        scroll-mt-24 bg-[#d4dce742]
         py-12 text-white md:py-14
       "
     >
       {/* BACKGROUND */}
       <Image
-        src="/images/hero-sunset.jpeg"
+        src="/images/hero-sunset.png"
         alt=""
         fill
         sizes="100vw"
@@ -59,9 +59,9 @@ export default function CTASection({ locale }: Props) {
         className="
           pointer-events-none absolute inset-0 -z-10
           bg-gradient-to-r
-          from-[#071426]/95
-          via-[#071426]/80
-          to-[#071426]/35
+          from-[#271426]/20
+          via-[#071426]/60
+          to-[#071426]/80
         "
       />
 

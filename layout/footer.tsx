@@ -115,7 +115,7 @@ export default function Footer({ locale }: Props) {
               className="inline-flex rounded-sm bg-white px-4 py-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#F50087]"
             >
               <Image
-                src="/images/logo-courts-300.png"
+                src="/images/Courts & Padel Infrastructure Logo.png"
                 alt="COURTS&PADEL"
                 width={180}
                 height={70}

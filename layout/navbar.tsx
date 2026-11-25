@@ -63,7 +63,7 @@ export default function Navbar({ locale }: Props) {
           aria-label="COURTS&PADEL - Home"
         >
          <Image
-  src="/images/logo-courts-300.png"
+  src="/images/Courts & Padel Infrastructure Logo.png"
   alt="COURTS&PADEL"
   width={150}
   height={60}

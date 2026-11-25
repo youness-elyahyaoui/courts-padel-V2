@@ -46,7 +46,7 @@ export default function MaintenanceSection({ locale }: Props) {
         {/* PHOTO */}
         <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[510px]">
           <Image
-            src="/images/maintenance.png"
+            src="/images/wartung-2.jpeg"
             alt={t.imageAlt}
             fill
             sizes="(max-width: 1023px) 100vw, 50vw"

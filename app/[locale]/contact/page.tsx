@@ -83,7 +83,7 @@ export default function ContactPage() {
         <aside className="space-y-5">
           <div className="relative aspect-[16/9] overflow-hidden rounded-sm">
             <Image
-              src="/images/about/court.png"
+              src="/images/about/court-2.jpeg"
               alt={t("details.imageAlt")}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"

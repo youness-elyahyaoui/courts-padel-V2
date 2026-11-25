@@ -92,7 +92,7 @@ export default function AboutSection({ locale }: Props) {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-md">
             <Image
-              src="/images/about-team.png"
+              src="/images/about-team-2.jpeg"
               alt={t.imageAlt}
               fill
               sizes="(max-width: 1023px) 100vw, 50vw"

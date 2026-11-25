@@ -6,7 +6,7 @@ const services = [
   {
     id: "verkauf",
     key: "sales",
-    image: "/images/verkauf.png",
+    image: "/images/verkauf-2.jpeg",
     icon: "/icons/terrain-padel.svg",
   },
   {
@@ -36,7 +36,7 @@ const services = [
   {
     id: "wartung",
     key: "maintenance",
-    image: "/images/wartung.png",
+    image: "/images/wartung-2.jpeg",
     icon: "/icons/entretien-padel.svg",
   },
 ] as const;
